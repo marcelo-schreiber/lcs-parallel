@@ -1,0 +1,660 @@
+# started on Tue May 13 22:00:12 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.108,34 msec task-clock                       #    1,879 CPUs utilized             
+               690      context-switches                 #  221,983 /sec                      
+                15      cpu-migrations                   #    4,826 /sec                      
+           781.642      page-faults                      #  251,466 K/sec                     
+     4.948.580.309      cpu_atom/cycles/                 #    1,592 GHz                         (0,12%)
+    14.036.230.888      cpu_core/cycles/                 #    4,516 GHz                         (99,93%)
+     4.652.689.680      cpu_atom/instructions/           #    0,94  insn per cycle              (0,18%)
+    20.951.265.117      cpu_core/instructions/           #    4,23  insn per cycle              (99,93%)
+     1.137.040.564      cpu_atom/branches/               #  365,803 M/sec                       (0,12%)
+     4.068.538.864      cpu_core/branches/               #    1,309 G/sec                       (99,93%)
+         9.536.651      cpu_atom/branch-misses/          #    0,84% of all branches             (0,21%)
+        54.710.484      cpu_core/branch-misses/          #    4,81% of all branches             (99,93%)
+             TopdownL1 (cpu_core)                 #     52,1 %  tma_backend_bound      
+                                                  #      5,4 %  tma_bad_speculation    
+                                                  #     15,4 %  tma_frontend_bound     
+                                                  #     27,1 %  tma_retiring             (99,93%)
+             TopdownL1 (cpu_atom)                 #      0,8 %  tma_bad_speculation    
+                                                  #     21,5 %  tma_retiring             (0,21%)
+                                                  #     56,7 %  tma_backend_bound      
+                                                  #     56,7 %  tma_backend_bound_aux  
+                                                  #     21,1 %  tma_frontend_bound       (0,21%)
+
+       1,654624440 seconds time elapsed
+
+       2,304870000 seconds user
+       0,803468000 seconds sys
+
+
+# started on Tue May 13 22:00:49 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.115,96 msec task-clock                       #    1,880 CPUs utilized             
+               704      context-switches                 #  225,933 /sec                      
+                21      cpu-migrations                   #    6,739 /sec                      
+           781.639      page-faults                      #  250,850 K/sec                     
+     4.971.693.883      cpu_atom/cycles/                 #    1,596 GHz                         (0,11%)
+    14.163.432.771      cpu_core/cycles/                 #    4,545 GHz                         (99,91%)
+     4.830.438.116      cpu_atom/instructions/           #    0,97  insn per cycle              (0,17%)
+    20.953.833.657      cpu_core/instructions/           #    4,21  insn per cycle              (99,91%)
+       945.035.059      cpu_atom/branches/               #  303,288 M/sec                       (0,16%)
+     4.069.043.297      cpu_core/branches/               #    1,306 G/sec                       (99,91%)
+         8.866.540      cpu_atom/branch-misses/          #    0,94% of all branches             (0,23%)
+        54.690.992      cpu_core/branch-misses/          #    5,79% of all branches             (99,91%)
+             TopdownL1 (cpu_core)                 #     53,2 %  tma_backend_bound      
+                                                  #      5,0 %  tma_bad_speculation    
+                                                  #     14,8 %  tma_frontend_bound     
+                                                  #     27,0 %  tma_retiring             (99,91%)
+             TopdownL1 (cpu_atom)                 #     -1,3 %  tma_bad_speculation    
+                                                  #     21,0 %  tma_retiring             (0,23%)
+                                                  #     57,6 %  tma_backend_bound      
+                                                  #     57,6 %  tma_backend_bound_aux  
+                                                  #     22,8 %  tma_frontend_bound       (0,23%)
+
+       1,657791712 seconds time elapsed
+
+       2,351035000 seconds user
+       0,764806000 seconds sys
+
+
+# started on Tue May 13 22:01:26 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.124,45 msec task-clock                       #    1,882 CPUs utilized             
+               695      context-switches                 #  222,439 /sec                      
+                14      cpu-migrations                   #    4,481 /sec                      
+           781.638      page-faults                      #  250,169 K/sec                     
+     5.193.484.366      cpu_atom/cycles/                 #    1,662 GHz                         (0,64%)
+    14.135.008.332      cpu_core/cycles/                 #    4,524 GHz                         (99,52%)
+     6.253.852.915      cpu_atom/instructions/           #    1,20  insn per cycle              (0,90%)
+    20.979.037.968      cpu_core/instructions/           #    4,04  insn per cycle              (99,52%)
+     1.216.438.739      cpu_atom/branches/               #  389,330 M/sec                       (0,84%)
+     4.073.885.264      cpu_core/branches/               #    1,304 G/sec                       (99,52%)
+        16.671.282      cpu_atom/branch-misses/          #    1,37% of all branches             (0,90%)
+        54.751.192      cpu_core/branch-misses/          #    4,50% of all branches             (99,52%)
+             TopdownL1 (cpu_core)                 #     52,0 %  tma_backend_bound      
+                                                  #      5,7 %  tma_bad_speculation    
+                                                  #     15,5 %  tma_frontend_bound     
+                                                  #     26,8 %  tma_retiring             (99,52%)
+             TopdownL1 (cpu_atom)                 #     10,3 %  tma_bad_speculation    
+                                                  #     26,1 %  tma_retiring             (0,90%)
+                                                  #     58,7 %  tma_backend_bound      
+                                                  #     58,7 %  tma_backend_bound_aux  
+                                                  #      4,9 %  tma_frontend_bound       (0,95%)
+
+       1,660023856 seconds time elapsed
+
+       2,337104000 seconds user
+       0,787340000 seconds sys
+
+
+# started on Tue May 13 22:02:03 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.112,71 msec task-clock                       #    1,875 CPUs utilized             
+               684      context-switches                 #  219,744 /sec                      
+                11      cpu-migrations                   #    3,534 /sec                      
+           781.643      page-faults                      #  251,114 K/sec                     
+     4.821.494.577      cpu_atom/cycles/                 #    1,549 GHz                         (0,13%)
+    13.987.631.447      cpu_core/cycles/                 #    4,494 GHz                         (99,97%)
+     2.336.197.089      cpu_atom/instructions/           #    0,48  insn per cycle              (0,14%)
+    20.948.364.425      cpu_core/instructions/           #    4,34  insn per cycle              (99,97%)
+       454.318.959      cpu_atom/branches/               #  145,956 M/sec                       (0,14%)
+     4.068.028.169      cpu_core/branches/               #    1,307 G/sec                       (99,97%)
+         9.867.210      cpu_atom/branch-misses/          #    2,17% of all branches             (0,14%)
+        54.820.397      cpu_core/branch-misses/          #   12,07% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     51,7 %  tma_backend_bound      
+                                                  #      5,8 %  tma_bad_speculation    
+                                                  #     15,5 %  tma_frontend_bound     
+                                                  #     27,1 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #     55,1 %  tma_bad_speculation    
+                                                  #     11,3 %  tma_retiring             (0,14%)
+                                                  #     23,8 %  tma_backend_bound      
+                                                  #     23,8 %  tma_backend_bound_aux  
+                                                  #      9,8 %  tma_frontend_bound       (0,14%)
+
+       1,659807001 seconds time elapsed
+
+       2,326032000 seconds user
+       0,788266000 seconds sys
+
+
+# started on Tue May 13 22:02:40 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.128,94 msec task-clock                       #    1,871 CPUs utilized             
+               707      context-switches                 #  225,955 /sec                      
+                30      cpu-migrations                   #    9,588 /sec                      
+           781.636      page-faults                      #  249,809 K/sec                     
+     9.476.719.767      cpu_atom/cycles/                 #    3,029 GHz                         (0,14%)
+    14.155.654.019      cpu_core/cycles/                 #    4,524 GHz                         (99,82%)
+     9.077.969.731      cpu_atom/instructions/           #    0,96  insn per cycle              (0,18%)
+    20.961.934.362      cpu_core/instructions/           #    2,21  insn per cycle              (99,82%)
+     1.695.532.617      cpu_atom/branches/               #  541,888 M/sec                       (0,18%)
+     4.070.686.623      cpu_core/branches/               #    1,301 G/sec                       (99,82%)
+        13.517.161      cpu_atom/branch-misses/          #    0,80% of all branches             (0,18%)
+        54.857.389      cpu_core/branch-misses/          #    3,24% of all branches             (99,82%)
+             TopdownL1 (cpu_core)                 #     52,1 %  tma_backend_bound      
+                                                  #      5,4 %  tma_bad_speculation    
+                                                  #     15,8 %  tma_frontend_bound     
+                                                  #     26,8 %  tma_retiring             (99,82%)
+             TopdownL1 (cpu_atom)                 #     -6,4 %  tma_bad_speculation    
+                                                  #     33,0 %  tma_retiring             (0,16%)
+                                                  #     53,4 %  tma_backend_bound      
+                                                  #     53,4 %  tma_backend_bound_aux  
+                                                  #     20,0 %  tma_frontend_bound       (0,21%)
+
+       1,672138184 seconds time elapsed
+
+       2,336133000 seconds user
+       0,792990000 seconds sys
+
+
+# started on Tue May 13 22:03:18 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.096,76 msec task-clock                       #    1,866 CPUs utilized             
+               713      context-switches                 #  230,241 /sec                      
+                25      cpu-migrations                   #    8,073 /sec                      
+           781.633      page-faults                      #  252,404 K/sec                     
+     4.715.320.748      cpu_atom/cycles/                 #    1,523 GHz                         (0,18%)
+    14.113.176.317      cpu_core/cycles/                 #    4,557 GHz                         (99,87%)
+     3.928.265.210      cpu_atom/instructions/           #    0,83  insn per cycle              (0,25%)
+    20.956.919.365      cpu_core/instructions/           #    4,44  insn per cycle              (99,87%)
+       981.737.963      cpu_atom/branches/               #  317,021 M/sec                       (0,26%)
+     4.069.647.478      cpu_core/branches/               #    1,314 G/sec                       (99,87%)
+         6.993.135      cpu_atom/branch-misses/          #    0,71% of all branches             (0,23%)
+        54.843.649      cpu_core/branch-misses/          #    5,59% of all branches             (99,87%)
+             TopdownL1 (cpu_core)                 #     51,9 %  tma_backend_bound      
+                                                  #      5,4 %  tma_bad_speculation    
+                                                  #     15,6 %  tma_frontend_bound     
+                                                  #     27,2 %  tma_retiring             (99,87%)
+             TopdownL1 (cpu_atom)                 #     -0,0 %  tma_bad_speculation    
+                                                  #     22,9 %  tma_retiring             (0,31%)
+                                                  #     54,5 %  tma_backend_bound      
+                                                  #     54,5 %  tma_backend_bound_aux  
+                                                  #     22,6 %  tma_frontend_bound       (0,31%)
+
+       1,659364514 seconds time elapsed
+
+       2,292836000 seconds user
+       0,805027000 seconds sys
+
+
+# started on Tue May 13 22:03:55 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.107,03 msec task-clock                       #    1,876 CPUs utilized             
+               696      context-switches                 #  224,008 /sec                      
+                14      cpu-migrations                   #    4,506 /sec                      
+           781.647      page-faults                      #  251,574 K/sec                     
+     5.120.093.455      cpu_atom/cycles/                 #    1,648 GHz                         (0,17%)
+    13.970.748.832      cpu_core/cycles/                 #    4,496 GHz                         (99,85%)
+     6.747.005.166      cpu_atom/instructions/           #    1,32  insn per cycle              (0,23%)
+    20.955.703.105      cpu_core/instructions/           #    4,09  insn per cycle              (99,85%)
+       997.539.656      cpu_atom/branches/               #  321,059 M/sec                       (0,31%)
+     4.069.351.863      cpu_core/branches/               #    1,310 G/sec                       (99,85%)
+        11.297.008      cpu_atom/branch-misses/          #    1,13% of all branches             (0,32%)
+        54.846.858      cpu_core/branch-misses/          #    5,50% of all branches             (99,85%)
+             TopdownL1 (cpu_core)                 #     51,4 %  tma_backend_bound      
+                                                  #      5,6 %  tma_bad_speculation    
+                                                  #     15,7 %  tma_frontend_bound     
+                                                  #     27,3 %  tma_retiring             (99,85%)
+             TopdownL1 (cpu_atom)                 #      3,2 %  tma_bad_speculation    
+                                                  #     24,8 %  tma_retiring             (0,37%)
+                                                  #     57,1 %  tma_backend_bound      
+                                                  #     57,1 %  tma_backend_bound_aux  
+                                                  #     14,9 %  tma_frontend_bound       (0,37%)
+
+       1,656592265 seconds time elapsed
+
+       2,357388000 seconds user
+       0,750671000 seconds sys
+
+
+# started on Tue May 13 22:04:32 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.103,09 msec task-clock                       #    1,876 CPUs utilized             
+               683      context-switches                 #  220,103 /sec                      
+                12      cpu-migrations                   #    3,867 /sec                      
+           781.638      page-faults                      #  251,890 K/sec                     
+     4.920.719.521      cpu_atom/cycles/                 #    1,586 GHz                         (0,27%)
+    14.087.446.838      cpu_core/cycles/                 #    4,540 GHz                         (99,84%)
+     4.936.909.600      cpu_atom/instructions/           #    1,00  insn per cycle              (0,34%)
+    20.956.518.390      cpu_core/instructions/           #    4,26  insn per cycle              (99,84%)
+       905.798.216      cpu_atom/branches/               #  291,902 M/sec                       (0,28%)
+     4.069.585.039      cpu_core/branches/               #    1,311 G/sec                       (99,84%)
+        14.321.728      cpu_atom/branch-misses/          #    1,58% of all branches             (0,40%)
+        54.856.116      cpu_core/branch-misses/          #    6,06% of all branches             (99,84%)
+             TopdownL1 (cpu_core)                 #     52,1 %  tma_backend_bound      
+                                                  #      5,6 %  tma_bad_speculation    
+                                                  #     15,6 %  tma_frontend_bound     
+                                                  #     26,8 %  tma_retiring             (99,84%)
+             TopdownL1 (cpu_atom)                 #     12,7 %  tma_bad_speculation    
+                                                  #     23,1 %  tma_retiring             (0,40%)
+                                                  #     58,2 %  tma_backend_bound      
+                                                  #     58,2 %  tma_backend_bound_aux  
+                                                  #      6,0 %  tma_frontend_bound       (0,40%)
+
+       1,653785690 seconds time elapsed
+
+       2,334845000 seconds user
+       0,769336000 seconds sys
+
+
+# started on Tue May 13 22:05:09 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.102,18 msec task-clock                       #    1,877 CPUs utilized             
+               693      context-switches                 #  223,391 /sec                      
+                14      cpu-migrations                   #    4,513 /sec                      
+           781.636      page-faults                      #  251,963 K/sec                     
+     4.931.344.120      cpu_atom/cycles/                 #    1,590 GHz                         (0,27%)
+    14.081.499.156      cpu_core/cycles/                 #    4,539 GHz                         (99,83%)
+     4.949.521.826      cpu_atom/instructions/           #    1,00  insn per cycle              (0,34%)
+    20.957.529.550      cpu_core/instructions/           #    4,25  insn per cycle              (99,83%)
+       954.293.075      cpu_atom/branches/               #  307,620 M/sec                       (0,34%)
+     4.069.819.592      cpu_core/branches/               #    1,312 G/sec                       (99,83%)
+         6.295.803      cpu_atom/branch-misses/          #    0,66% of all branches             (0,24%)
+        54.959.797      cpu_core/branch-misses/          #    5,76% of all branches             (99,83%)
+             TopdownL1 (cpu_core)                 #     52,0 %  tma_backend_bound      
+                                                  #      5,6 %  tma_bad_speculation    
+                                                  #     15,3 %  tma_frontend_bound     
+                                                  #     27,1 %  tma_retiring             (99,83%)
+             TopdownL1 (cpu_atom)                 #      1,9 %  tma_bad_speculation    
+                                                  #     26,3 %  tma_retiring             (0,39%)
+                                                  #     53,9 %  tma_backend_bound      
+                                                  #     53,9 %  tma_backend_bound_aux  
+                                                  #     17,9 %  tma_frontend_bound       (0,40%)
+
+       1,652739434 seconds time elapsed
+
+       2,307158000 seconds user
+       0,795675000 seconds sys
+
+
+# started on Tue May 13 22:05:46 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.086,45 msec task-clock                       #    1,880 CPUs utilized             
+               694      context-switches                 #  224,854 /sec                      
+                25      cpu-migrations                   #    8,100 /sec                      
+           781.636      page-faults                      #  253,248 K/sec                     
+     4.726.103.448      cpu_atom/cycles/                 #    1,531 GHz                         (0,15%)
+    14.074.629.467      cpu_core/cycles/                 #    4,560 GHz                         (99,94%)
+     2.391.718.360      cpu_atom/instructions/           #    0,51  insn per cycle              (0,15%)
+    20.952.137.823      cpu_core/instructions/           #    4,43  insn per cycle              (99,94%)
+       464.820.971      cpu_atom/branches/               #  150,601 M/sec                       (0,15%)
+     4.068.834.246      cpu_core/branches/               #    1,318 G/sec                       (99,94%)
+         9.052.234      cpu_atom/branch-misses/          #    1,95% of all branches             (0,15%)
+        54.688.511      cpu_core/branch-misses/          #   11,77% of all branches             (99,94%)
+             TopdownL1 (cpu_core)                 #     52,7 %  tma_backend_bound      
+                                                  #      5,0 %  tma_bad_speculation    
+                                                  #     15,0 %  tma_frontend_bound     
+                                                  #     27,3 %  tma_retiring             (99,94%)
+             TopdownL1 (cpu_atom)                 #     66,2 %  tma_bad_speculation    
+                                                  #     13,0 %  tma_retiring             (0,15%)
+                                                  #      8,2 %  tma_backend_bound      
+                                                  #      8,2 %  tma_backend_bound_aux  
+                                                  #     12,6 %  tma_frontend_bound       (0,15%)
+
+       1,642072405 seconds time elapsed
+
+       2,337760000 seconds user
+       0,749000000 seconds sys
+
+
+# started on Tue May 13 22:06:23 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.127,87 msec task-clock                       #    1,878 CPUs utilized             
+               695      context-switches                 #  222,196 /sec                      
+                15      cpu-migrations                   #    4,796 /sec                      
+           781.634      page-faults                      #  249,894 K/sec                     
+     5.043.220.730      cpu_atom/cycles/                 #    1,612 GHz                         (0,41%)
+    14.105.647.363      cpu_core/cycles/                 #    4,510 GHz                         (99,76%)
+     5.705.916.768      cpu_atom/instructions/           #    1,13  insn per cycle              (0,47%)
+    20.961.636.258      cpu_core/instructions/           #    4,16  insn per cycle              (99,76%)
+     1.285.540.859      cpu_atom/branches/               #  410,996 M/sec                       (0,43%)
+     4.070.647.539      cpu_core/branches/               #    1,301 G/sec                       (99,76%)
+        11.628.459      cpu_atom/branch-misses/          #    0,90% of all branches             (0,46%)
+        54.949.471      cpu_core/branch-misses/          #    4,27% of all branches             (99,76%)
+             TopdownL1 (cpu_core)                 #     52,3 %  tma_backend_bound      
+                                                  #      5,8 %  tma_bad_speculation    
+                                                  #     15,1 %  tma_frontend_bound     
+                                                  #     26,8 %  tma_retiring             (99,76%)
+             TopdownL1 (cpu_atom)                 #      3,5 %  tma_bad_speculation    
+                                                  #     26,4 %  tma_retiring             (0,48%)
+                                                  #     54,9 %  tma_backend_bound      
+                                                  #     54,9 %  tma_backend_bound_aux  
+                                                  #     15,2 %  tma_frontend_bound       (0,48%)
+
+       1,665328814 seconds time elapsed
+
+       2,379577000 seconds user
+       0,749347000 seconds sys
+
+
+# started on Tue May 13 22:07:00 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.110,13 msec task-clock                       #    1,872 CPUs utilized             
+               688      context-switches                 #  221,213 /sec                      
+                16      cpu-migrations                   #    5,144 /sec                      
+           781.636      page-faults                      #  251,319 K/sec                     
+     3.984.614.755      cpu_atom/cycles/                 #    1,281 GHz                         (0,03%)
+    14.111.345.915      cpu_core/cycles/                 #    4,537 GHz                         (99,97%)
+     2.082.528.247      cpu_atom/instructions/           #    0,52  insn per cycle              (0,12%)
+    20.944.923.937      cpu_core/instructions/           #    5,26  insn per cycle              (99,97%)
+       401.246.487      cpu_atom/branches/               #  129,013 M/sec                       (0,13%)
+     4.067.467.777      cpu_core/branches/               #    1,308 G/sec                       (99,97%)
+         8.842.697      cpu_atom/branch-misses/          #    2,20% of all branches             (0,13%)
+        54.875.959      cpu_core/branch-misses/          #   13,68% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     52,2 %  tma_backend_bound      
+                                                  #      5,6 %  tma_bad_speculation    
+                                                  #     15,3 %  tma_frontend_bound     
+                                                  #     26,9 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #      1,7 %  tma_bad_speculation    
+                                                  #     10,8 %  tma_retiring             (0,13%)
+                                                  #     75,9 %  tma_backend_bound      
+                                                  #     75,9 %  tma_backend_bound_aux  
+                                                  #     11,6 %  tma_frontend_bound       (0,13%)
+
+       1,661447292 seconds time elapsed
+
+       2,324892000 seconds user
+       0,785235000 seconds sys
+
+
+# started on Tue May 13 22:07:38 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.079,64 msec task-clock                       #    1,877 CPUs utilized             
+               696      context-switches                 #  226,000 /sec                      
+                14      cpu-migrations                   #    4,546 /sec                      
+           781.641      page-faults                      #  253,809 K/sec                     
+     4.322.623.010      cpu_atom/cycles/                 #    1,404 GHz                         (0,06%)
+    14.026.017.918      cpu_core/cycles/                 #    4,554 GHz                         (99,97%)
+     2.191.439.214      cpu_atom/instructions/           #    0,51  insn per cycle              (0,14%)
+    20.943.701.865      cpu_core/instructions/           #    4,85  insn per cycle              (99,97%)
+       423.585.335      cpu_atom/branches/               #  137,544 M/sec                       (0,14%)
+     4.067.230.060      cpu_core/branches/               #    1,321 G/sec                       (99,97%)
+         8.351.368      cpu_atom/branch-misses/          #    1,97% of all branches             (0,14%)
+        54.708.185      cpu_core/branch-misses/          #   12,92% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     52,2 %  tma_backend_bound      
+                                                  #      5,4 %  tma_bad_speculation    
+                                                  #     15,2 %  tma_frontend_bound     
+                                                  #     27,2 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #     12,5 %  tma_bad_speculation    
+                                                  #     11,5 %  tma_retiring             (0,14%)
+                                                  #     65,5 %  tma_backend_bound      
+                                                  #     65,5 %  tma_backend_bound_aux  
+                                                  #     10,5 %  tma_frontend_bound       (0,14%)
+
+       1,640581305 seconds time elapsed
+
+       2,254269000 seconds user
+       0,825338000 seconds sys
+
+
+# started on Tue May 13 22:08:15 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.093,61 msec task-clock                       #    1,878 CPUs utilized             
+               690      context-switches                 #  223,040 /sec                      
+                16      cpu-migrations                   #    5,172 /sec                      
+           781.638      page-faults                      #  252,662 K/sec                     
+     4.642.403.845      cpu_atom/cycles/                 #    1,501 GHz                         (0,10%)
+    14.108.605.709      cpu_core/cycles/                 #    4,561 GHz                         (99,98%)
+       863.074.123      cpu_atom/instructions/           #    0,19  insn per cycle              (0,10%)
+    20.946.605.133      cpu_core/instructions/           #    4,51  insn per cycle              (99,98%)
+       163.397.107      cpu_atom/branches/               #   52,818 M/sec                       (0,10%)
+     4.067.714.606      cpu_core/branches/               #    1,315 G/sec                       (99,98%)
+         6.838.933      cpu_atom/branch-misses/          #    4,19% of all branches             (0,10%)
+        54.595.916      cpu_core/branch-misses/          #   33,41% of all branches             (99,98%)
+             TopdownL1 (cpu_core)                 #     52,5 %  tma_backend_bound      
+                                                  #      5,2 %  tma_bad_speculation    
+                                                  #     15,4 %  tma_frontend_bound     
+                                                  #     26,9 %  tma_retiring             (99,98%)
+             TopdownL1 (cpu_atom)                 #     78,9 %  tma_bad_speculation    
+                                                  #      6,2 %  tma_retiring             (0,10%)
+                                                  #      0,0 %  tma_backend_bound      
+                                                  #      0,0 %  tma_backend_bound_aux  
+                                                  #     15,0 %  tma_frontend_bound       (0,10%)
+
+       1,647075904 seconds time elapsed
+
+       2,300217000 seconds user
+       0,793281000 seconds sys
+
+
+# started on Tue May 13 22:08:53 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.109,33 msec task-clock                       #    1,875 CPUs utilized             
+               694      context-switches                 #  223,199 /sec                      
+                13      cpu-migrations                   #    4,181 /sec                      
+           781.640      page-faults                      #  251,385 K/sec                     
+     4.967.611.763      cpu_atom/cycles/                 #    1,598 GHz                         (0,08%)
+    13.994.740.070      cpu_core/cycles/                 #    4,501 GHz                         (99,99%)
+     1.069.572.518      cpu_atom/instructions/           #    0,22  insn per cycle              (0,08%)
+    20.944.690.545      cpu_core/instructions/           #    4,22  insn per cycle              (99,99%)
+       201.824.408      cpu_atom/branches/               #   64,909 M/sec                       (0,08%)
+     4.067.406.741      cpu_core/branches/               #    1,308 G/sec                       (99,99%)
+         8.562.567      cpu_atom/branch-misses/          #    4,24% of all branches             (0,08%)
+        54.860.153      cpu_core/branch-misses/          #   27,18% of all branches             (99,99%)
+             TopdownL1 (cpu_core)                 #     52,0 %  tma_backend_bound      
+                                                  #      5,3 %  tma_bad_speculation    
+                                                  #     15,4 %  tma_frontend_bound     
+                                                  #     27,3 %  tma_retiring             (99,99%)
+             TopdownL1 (cpu_atom)                 #     74,9 %  tma_bad_speculation    
+                                                  #      5,5 %  tma_retiring             (0,08%)
+                                                  #      7,9 %  tma_backend_bound      
+                                                  #      7,9 %  tma_backend_bound_aux  
+                                                  #     11,7 %  tma_frontend_bound       (0,08%)
+
+       1,658347947 seconds time elapsed
+
+       2,359351000 seconds user
+       0,751519000 seconds sys
+
+
+# started on Tue May 13 22:09:30 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.100,31 msec task-clock                       #    1,870 CPUs utilized             
+               692      context-switches                 #  223,203 /sec                      
+                15      cpu-migrations                   #    4,838 /sec                      
+           781.634      page-faults                      #  252,115 K/sec                     
+     4.140.745.599      cpu_atom/cycles/                 #    1,336 GHz                         (0,05%)
+    14.096.534.898      cpu_core/cycles/                 #    4,547 GHz                         (99,97%)
+     2.167.786.950      cpu_atom/instructions/           #    0,52  insn per cycle              (0,12%)
+    20.948.321.710      cpu_core/instructions/           #    5,06  insn per cycle              (99,97%)
+       419.154.718      cpu_atom/branches/               #  135,198 M/sec                       (0,12%)
+     4.067.979.870      cpu_core/branches/               #    1,312 G/sec                       (99,97%)
+         8.737.909      cpu_atom/branch-misses/          #    2,08% of all branches             (0,12%)
+        54.765.295      cpu_core/branch-misses/          #   13,07% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     52,1 %  tma_backend_bound      
+                                                  #      5,2 %  tma_bad_speculation    
+                                                  #     15,6 %  tma_frontend_bound     
+                                                  #     27,1 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #      8,1 %  tma_bad_speculation    
+                                                  #     11,7 %  tma_retiring             (0,12%)
+                                                  #     68,4 %  tma_backend_bound      
+                                                  #     68,4 %  tma_backend_bound_aux  
+                                                  #     11,8 %  tma_frontend_bound       (0,12%)
+
+       1,657861186 seconds time elapsed
+
+       2,325137000 seconds user
+       0,775377000 seconds sys
+
+
+# started on Tue May 13 22:10:07 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.098,33 msec task-clock                       #    1,871 CPUs utilized             
+               691      context-switches                 #  223,023 /sec                      
+                19      cpu-migrations                   #    6,132 /sec                      
+           781.643      page-faults                      #  252,279 K/sec                     
+     4.475.060.943      cpu_atom/cycles/                 #    1,444 GHz                         (0,08%)
+    14.077.668.653      cpu_core/cycles/                 #    4,544 GHz                         (99,98%)
+       885.748.354      cpu_atom/instructions/           #    0,20  insn per cycle              (0,09%)
+    20.947.016.318      cpu_core/instructions/           #    4,68  insn per cycle              (99,98%)
+       166.097.989      cpu_atom/branches/               #   53,609 M/sec                       (0,09%)
+     4.067.782.405      cpu_core/branches/               #    1,313 G/sec                       (99,98%)
+         8.331.725      cpu_atom/branch-misses/          #    5,02% of all branches             (0,09%)
+        54.786.731      cpu_core/branch-misses/          #   32,98% of all branches             (99,98%)
+             TopdownL1 (cpu_core)                 #     51,7 %  tma_backend_bound      
+                                                  #      5,4 %  tma_bad_speculation    
+                                                  #     15,6 %  tma_frontend_bound     
+                                                  #     27,4 %  tma_retiring             (99,98%)
+             TopdownL1 (cpu_atom)                 #     26,2 %  tma_bad_speculation    
+                                                  #      6,2 %  tma_retiring             (0,09%)
+                                                  #     51,3 %  tma_backend_bound      
+                                                  #     51,3 %  tma_backend_bound_aux  
+                                                  #     16,3 %  tma_frontend_bound       (0,09%)
+
+       1,656315706 seconds time elapsed
+
+       2,338281000 seconds user
+       0,760561000 seconds sys
+
+
+# started on Tue May 13 22:10:44 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.123,36 msec task-clock                       #    1,875 CPUs utilized             
+               698      context-switches                 #  223,477 /sec                      
+                15      cpu-migrations                   #    4,803 /sec                      
+           781.637      page-faults                      #  250,255 K/sec                     
+     4.966.326.255      cpu_atom/cycles/                 #    1,590 GHz                         (0,10%)
+    14.129.422.630      cpu_core/cycles/                 #    4,524 GHz                         (99,98%)
+     1.709.814.018      cpu_atom/instructions/           #    0,34  insn per cycle              (0,10%)
+    20.944.056.909      cpu_core/instructions/           #    4,22  insn per cycle              (99,98%)
+       332.019.311      cpu_atom/branches/               #  106,302 M/sec                       (0,10%)
+     4.067.243.117      cpu_core/branches/               #    1,302 G/sec                       (99,98%)
+         8.363.458      cpu_atom/branch-misses/          #    2,52% of all branches             (0,10%)
+        54.862.825      cpu_core/branch-misses/          #   16,52% of all branches             (99,98%)
+             TopdownL1 (cpu_core)                 #     51,9 %  tma_backend_bound      
+                                                  #      5,1 %  tma_bad_speculation    
+                                                  #     15,6 %  tma_frontend_bound     
+                                                  #     27,4 %  tma_retiring             (99,98%)
+             TopdownL1 (cpu_atom)                 #     65,2 %  tma_bad_speculation    
+                                                  #      9,0 %  tma_retiring             (0,10%)
+                                                  #     12,6 %  tma_backend_bound      
+                                                  #     12,6 %  tma_backend_bound_aux  
+                                                  #     13,2 %  tma_frontend_bound       (0,10%)
+
+       1,665737775 seconds time elapsed
+
+       2,299606000 seconds user
+       0,824935000 seconds sys
+
+
+# started on Tue May 13 22:11:22 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.106,68 msec task-clock                       #    1,887 CPUs utilized             
+               690      context-switches                 #  222,102 /sec                      
+                17      cpu-migrations                   #    5,472 /sec                      
+           781.638      page-faults                      #  251,599 K/sec                     
+     6.316.555.048      cpu_atom/cycles/                 #    2,033 GHz                         (0,15%)
+    14.063.362.313      cpu_core/cycles/                 #    4,527 GHz                         (99,84%)
+     7.918.421.765      cpu_atom/instructions/           #    1,25  insn per cycle              (0,20%)
+    20.956.930.986      cpu_core/instructions/           #    3,32  insn per cycle              (99,84%)
+     1.202.954.688      cpu_atom/branches/               #  387,216 M/sec                       (0,26%)
+     4.069.596.656      cpu_core/branches/               #    1,310 G/sec                       (99,84%)
+        13.748.013      cpu_atom/branch-misses/          #    1,14% of all branches             (0,26%)
+        54.860.077      cpu_core/branch-misses/          #    4,56% of all branches             (99,84%)
+             TopdownL1 (cpu_core)                 #     51,6 %  tma_backend_bound      
+                                                  #      5,5 %  tma_bad_speculation    
+                                                  #     15,7 %  tma_frontend_bound     
+                                                  #     27,2 %  tma_retiring             (99,84%)
+             TopdownL1 (cpu_atom)                 #      1,8 %  tma_bad_speculation    
+                                                  #     24,3 %  tma_retiring             (0,31%)
+                                                  #     58,7 %  tma_backend_bound      
+                                                  #     58,7 %  tma_backend_bound_aux  
+                                                  #     15,1 %  tma_frontend_bound       (0,31%)
+
+       1,646755883 seconds time elapsed
+
+       2,312719000 seconds user
+       0,794903000 seconds sys
+
+
+# started on Tue May 13 22:11:59 2025
+
+
+ Performance counter stats for './parallel 2 256':
+
+          3.103,66 msec task-clock                       #    1,877 CPUs utilized             
+               693      context-switches                 #  223,285 /sec                      
+                21      cpu-migrations                   #    6,766 /sec                      
+           781.635      page-faults                      #  251,843 K/sec                     
+     4.701.273.401      cpu_atom/cycles/                 #    1,515 GHz                         (0,16%)
+    14.010.616.504      cpu_core/cycles/                 #    4,514 GHz                         (99,88%)
+     4.108.236.647      cpu_atom/instructions/           #    0,87  insn per cycle              (0,22%)
+    20.953.695.754      cpu_core/instructions/           #    4,46  insn per cycle              (99,88%)
+     1.040.955.487      cpu_atom/branches/               #  335,396 M/sec                       (0,23%)
+     4.069.072.726      cpu_core/branches/               #    1,311 G/sec                       (99,88%)
+         7.349.561      cpu_atom/branch-misses/          #    0,71% of all branches             (0,22%)
+        54.696.733      cpu_core/branch-misses/          #    5,25% of all branches             (99,88%)
+             TopdownL1 (cpu_core)                 #     51,9 %  tma_backend_bound      
+                                                  #      5,6 %  tma_bad_speculation    
+                                                  #     15,6 %  tma_frontend_bound     
+                                                  #     27,0 %  tma_retiring             (99,88%)
+             TopdownL1 (cpu_atom)                 #      2,4 %  tma_bad_speculation    
+                                                  #     23,9 %  tma_retiring             (0,29%)
+                                                  #     49,7 %  tma_backend_bound      
+                                                  #     49,7 %  tma_backend_bound_aux  
+                                                  #     24,0 %  tma_frontend_bound       (0,29%)
+
+       1,653255411 seconds time elapsed
+
+       2,341678000 seconds user
+       0,762661000 seconds sys
+
+

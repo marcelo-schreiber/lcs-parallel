@@ -1,0 +1,660 @@
+# started on Tue May 13 22:12:19 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            170,74 msec task-clock                       #    1,004 CPUs utilized             
+                45      context-switches                 #  263,553 /sec                      
+                13      cpu-migrations                   #   76,137 /sec                      
+            49.002      page-faults                      #  286,991 K/sec                     
+       331.616.659      cpu_atom/cycles/                 #    1,942 GHz                         (0,24%)
+       769.371.137      cpu_core/cycles/                 #    4,506 GHz                         (99,94%)
+       180.965.190      cpu_atom/instructions/           #    0,55  insn per cycle              (0,24%)
+     1.307.947.685      cpu_core/instructions/           #    3,94  insn per cycle              (99,94%)
+        32.510.261      cpu_atom/branches/               #  190,404 M/sec                       (0,24%)
+       254.676.140      cpu_core/branches/               #    1,492 G/sec                       (99,94%)
+         1.483.937      cpu_atom/branch-misses/          #    4,56% of all branches             (0,24%)
+         3.206.112      cpu_core/branch-misses/          #    9,86% of all branches             (99,94%)
+             TopdownL1 (cpu_core)                 #     50,4 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (99,94%)
+             TopdownL1 (cpu_atom)                 #     55,8 %  tma_bad_speculation    
+                                                  #     14,2 %  tma_retiring             (0,24%)
+                                                  #      0,0 %  tma_backend_bound      
+                                                  #      0,0 %  tma_backend_bound_aux  
+                                                  #     30,0 %  tma_frontend_bound       (0,24%)
+
+       0,170053185 seconds time elapsed
+
+       0,116487000 seconds user
+       0,054226000 seconds sys
+
+
+# started on Tue May 13 22:12:24 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            170,31 msec task-clock                       #    1,004 CPUs utilized             
+                49      context-switches                 #  287,717 /sec                      
+                13      cpu-migrations                   #   76,333 /sec                      
+            49.000      page-faults                      #  287,717 K/sec                     
+       458.628.514      cpu_atom/cycles/                 #    2,693 GHz                         (1,14%)
+       769.638.707      cpu_core/cycles/                 #    4,519 GHz                         (97,90%)
+       605.108.762      cpu_atom/instructions/           #    1,32  insn per cycle              (1,77%)
+     1.319.542.626      cpu_core/instructions/           #    2,88  insn per cycle              (97,90%)
+       124.677.608      cpu_atom/branches/               #  732,080 M/sec                       (2,31%)
+       256.945.572      cpu_core/branches/               #    1,509 G/sec                       (97,90%)
+         1.921.087      cpu_atom/branch-misses/          #    1,54% of all branches             (2,38%)
+         3.205.360      cpu_core/branch-misses/          #    2,57% of all branches             (97,90%)
+             TopdownL1 (cpu_core)                 #     50,3 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,5 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (97,90%)
+             TopdownL1 (cpu_atom)                 #      7,7 %  tma_bad_speculation    
+                                                  #     27,6 %  tma_retiring             (2,38%)
+                                                  #     59,1 %  tma_backend_bound      
+                                                  #     59,1 %  tma_backend_bound_aux  
+                                                  #      5,7 %  tma_frontend_bound       (2,38%)
+
+       0,169573526 seconds time elapsed
+
+       0,127115000 seconds user
+       0,043380000 seconds sys
+
+
+# started on Tue May 13 22:12:29 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,03 msec task-clock                       #    1,006 CPUs utilized             
+                50      context-switches                 #  295,801 /sec                      
+                18      cpu-migrations                   #  106,488 /sec                      
+            49.003      page-faults                      #  289,902 K/sec                     
+       389.637.013      cpu_atom/cycles/                 #    2,305 GHz                         (0,45%)
+       765.613.407      cpu_core/cycles/                 #    4,529 GHz                         (99,67%)
+       328.756.167      cpu_atom/instructions/           #    0,84  insn per cycle              (0,55%)
+     1.307.564.313      cpu_core/instructions/           #    3,36  insn per cycle              (99,67%)
+        58.491.387      cpu_atom/branches/               #  346,036 M/sec                       (0,55%)
+       254.772.333      cpu_core/branches/               #    1,507 G/sec                       (99,67%)
+           847.847      cpu_atom/branch-misses/          #    1,45% of all branches             (0,55%)
+         3.214.497      cpu_core/branch-misses/          #    5,50% of all branches             (99,67%)
+             TopdownL1 (cpu_core)                 #     50,0 %  tma_backend_bound      
+                                                  #      8,2 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     29,2 %  tma_retiring             (99,67%)
+             TopdownL1 (cpu_atom)                 #     44,1 %  tma_bad_speculation    
+                                                  #     20,4 %  tma_retiring             (0,55%)
+                                                  #     17,3 %  tma_backend_bound      
+                                                  #     17,3 %  tma_backend_bound_aux  
+                                                  #     18,2 %  tma_frontend_bound       (0,55%)
+
+       0,168096363 seconds time elapsed
+
+       0,118297000 seconds user
+       0,050699000 seconds sys
+
+
+# started on Tue May 13 22:12:34 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            168,03 msec task-clock                       #    1,005 CPUs utilized             
+                47      context-switches                 #  279,718 /sec                      
+                17      cpu-migrations                   #  101,175 /sec                      
+            49.001      page-faults                      #  291,627 K/sec                     
+       324.681.132      cpu_atom/cycles/                 #    1,932 GHz                         (0,38%)
+       765.793.218      cpu_core/cycles/                 #    4,558 GHz                         (99,80%)
+       147.537.320      cpu_atom/instructions/           #    0,45  insn per cycle              (0,38%)
+     1.307.454.869      cpu_core/instructions/           #    4,03  insn per cycle              (99,80%)
+        26.220.626      cpu_atom/branches/               #  156,051 M/sec                       (0,38%)
+       254.714.033      cpu_core/branches/               #    1,516 G/sec                       (99,80%)
+         1.567.892      cpu_atom/branch-misses/          #    5,98% of all branches             (0,38%)
+         3.202.486      cpu_core/branch-misses/          #   12,21% of all branches             (99,80%)
+             TopdownL1 (cpu_core)                 #     50,3 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,5 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (99,80%)
+             TopdownL1 (cpu_atom)                 #     60,2 %  tma_bad_speculation    
+                                                  #     11,5 %  tma_retiring             (0,38%)
+                                                  #      0,0 %  tma_backend_bound      
+                                                  #      0,0 %  tma_backend_bound_aux  
+                                                  #     28,4 %  tma_frontend_bound       (0,38%)
+
+       0,167144066 seconds time elapsed
+
+       0,130138000 seconds user
+       0,038634000 seconds sys
+
+
+# started on Tue May 13 22:12:39 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,99 msec task-clock                       #    1,003 CPUs utilized             
+                46      context-switches                 #  270,598 /sec                      
+                11      cpu-migrations                   #   64,708 /sec                      
+            49.002      page-faults                      #  288,258 K/sec                     
+       465.926.070      cpu_atom/cycles/                 #    2,741 GHz                         (0,69%)
+       773.396.898      cpu_core/cycles/                 #    4,550 GHz                         (98,35%)
+       516.374.218      cpu_atom/instructions/           #    1,11  insn per cycle              (1,30%)
+     1.320.722.182      cpu_core/instructions/           #    2,83  insn per cycle              (98,35%)
+       110.490.054      cpu_atom/branches/               #  649,966 M/sec                       (1,63%)
+       257.082.960      cpu_core/branches/               #    1,512 G/sec                       (98,35%)
+           832.562      cpu_atom/branch-misses/          #    0,75% of all branches             (1,92%)
+         3.238.051      cpu_core/branch-misses/          #    2,93% of all branches             (98,35%)
+             TopdownL1 (cpu_core)                 #     50,4 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (98,35%)
+             TopdownL1 (cpu_atom)                 #      2,4 %  tma_bad_speculation    
+                                                  #     29,2 %  tma_retiring             (1,92%)
+                                                  #     44,6 %  tma_backend_bound      
+                                                  #     44,6 %  tma_backend_bound_aux  
+                                                  #     23,8 %  tma_frontend_bound       (1,92%)
+
+       0,169472318 seconds time elapsed
+
+       0,128052000 seconds user
+       0,042347000 seconds sys
+
+
+# started on Tue May 13 22:12:44 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            170,58 msec task-clock                       #    1,005 CPUs utilized             
+                46      context-switches                 #  269,670 /sec                      
+                10      cpu-migrations                   #   58,624 /sec                      
+            49.000      page-faults                      #  287,257 K/sec                     
+       471.240.853      cpu_atom/cycles/                 #    2,763 GHz                         (0,73%)
+       773.533.903      cpu_core/cycles/                 #    4,535 GHz                         (98,26%)
+       509.169.276      cpu_atom/instructions/           #    1,08  insn per cycle              (1,35%)
+     1.322.795.004      cpu_core/instructions/           #    2,81  insn per cycle              (98,26%)
+       105.661.588      cpu_atom/branches/               #  619,429 M/sec                       (1,76%)
+       257.386.953      cpu_core/branches/               #    1,509 G/sec                       (98,26%)
+           811.449      cpu_atom/branch-misses/          #    0,77% of all branches             (2,01%)
+         3.244.642      cpu_core/branch-misses/          #    3,07% of all branches             (98,26%)
+             TopdownL1 (cpu_core)                 #     50,3 %  tma_backend_bound      
+                                                  #      8,2 %  tma_bad_speculation    
+                                                  #     12,3 %  tma_frontend_bound     
+                                                  #     29,2 %  tma_retiring             (98,26%)
+             TopdownL1 (cpu_atom)                 #      1,8 %  tma_bad_speculation    
+                                                  #     28,0 %  tma_retiring             (2,02%)
+                                                  #     47,3 %  tma_backend_bound      
+                                                  #     47,3 %  tma_backend_bound_aux  
+                                                  #     22,9 %  tma_frontend_bound       (2,02%)
+
+       0,169801142 seconds time elapsed
+
+       0,111435000 seconds user
+       0,059931000 seconds sys
+
+
+# started on Tue May 13 22:12:49 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            170,41 msec task-clock                       #    1,005 CPUs utilized             
+                46      context-switches                 #  269,930 /sec                      
+                10      cpu-migrations                   #   58,681 /sec                      
+            49.001      page-faults                      #  287,540 K/sec                     
+       544.070.919      cpu_atom/cycles/                 #    3,193 GHz                         (0,52%)
+       772.011.477      cpu_core/cycles/                 #    4,530 GHz                         (98,88%)
+       610.450.396      cpu_atom/instructions/           #    1,12  insn per cycle              (1,14%)
+     1.317.778.663      cpu_core/instructions/           #    2,42  insn per cycle              (98,88%)
+        98.577.503      cpu_atom/branches/               #  578,458 M/sec                       (1,37%)
+       256.405.901      cpu_core/branches/               #    1,505 G/sec                       (98,88%)
+         1.083.664      cpu_atom/branch-misses/          #    1,10% of all branches             (1,37%)
+         3.228.730      cpu_core/branch-misses/          #    3,28% of all branches             (98,88%)
+             TopdownL1 (cpu_core)                 #     50,4 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (98,88%)
+             TopdownL1 (cpu_atom)                 #      2,4 %  tma_bad_speculation    
+                                                  #     28,7 %  tma_retiring             (1,37%)
+                                                  #     46,4 %  tma_backend_bound      
+                                                  #     46,4 %  tma_backend_bound_aux  
+                                                  #     22,5 %  tma_frontend_bound       (1,37%)
+
+       0,169595582 seconds time elapsed
+
+       0,125545000 seconds user
+       0,045196000 seconds sys
+
+
+# started on Tue May 13 22:12:54 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            170,15 msec task-clock                       #    1,006 CPUs utilized             
+                46      context-switches                 #  270,343 /sec                      
+                12      cpu-migrations                   #   70,524 /sec                      
+            49.001      page-faults                      #  287,979 K/sec                     
+       468.401.076      cpu_atom/cycles/                 #    2,753 GHz                         (0,88%)
+       769.915.028      cpu_core/cycles/                 #    4,525 GHz                         (98,22%)
+       509.792.275      cpu_atom/instructions/           #    1,09  insn per cycle              (1,49%)
+     1.320.679.585      cpu_core/instructions/           #    2,82  insn per cycle              (98,22%)
+       109.502.070      cpu_atom/branches/               #  643,545 M/sec                       (1,76%)
+       257.158.073      cpu_core/branches/               #    1,511 G/sec                       (98,22%)
+           772.797      cpu_atom/branch-misses/          #    0,71% of all branches             (2,10%)
+         3.238.020      cpu_core/branch-misses/          #    2,96% of all branches             (98,22%)
+             TopdownL1 (cpu_core)                 #     50,3 %  tma_backend_bound      
+                                                  #      7,9 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (98,22%)
+             TopdownL1 (cpu_atom)                 #      2,3 %  tma_bad_speculation    
+                                                  #     28,9 %  tma_retiring             (2,11%)
+                                                  #     48,5 %  tma_backend_bound      
+                                                  #     48,5 %  tma_backend_bound_aux  
+                                                  #     20,3 %  tma_frontend_bound       (2,11%)
+
+       0,169190178 seconds time elapsed
+
+       0,115729000 seconds user
+       0,054871000 seconds sys
+
+
+# started on Tue May 13 22:12:59 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            167,35 msec task-clock                       #    1,005 CPUs utilized             
+                46      context-switches                 #  274,871 /sec                      
+                11      cpu-migrations                   #   65,730 /sec                      
+            49.001      page-faults                      #  292,804 K/sec                     
+       313.954.926      cpu_atom/cycles/                 #    1,876 GHz                         (0,31%)
+       759.374.175      cpu_core/cycles/                 #    4,538 GHz                         (99,96%)
+       110.486.879      cpu_atom/instructions/           #    0,35  insn per cycle              (0,31%)
+     1.305.098.856      cpu_core/instructions/           #    4,16  insn per cycle              (99,96%)
+        20.035.348      cpu_atom/branches/               #  119,721 M/sec                       (0,31%)
+       254.277.722      cpu_core/branches/               #    1,519 G/sec                       (99,96%)
+         1.266.128      cpu_atom/branch-misses/          #    6,32% of all branches             (0,31%)
+         3.179.647      cpu_core/branch-misses/          #   15,87% of all branches             (99,96%)
+             TopdownL1 (cpu_core)                 #     49,7 %  tma_backend_bound      
+                                                  #      8,2 %  tma_bad_speculation    
+                                                  #     12,8 %  tma_frontend_bound     
+                                                  #     29,3 %  tma_retiring             (99,96%)
+             TopdownL1 (cpu_atom)                 #     63,4 %  tma_bad_speculation    
+                                                  #      9,3 %  tma_retiring             (0,31%)
+                                                  #      0,0 %  tma_backend_bound      
+                                                  #      0,0 %  tma_backend_bound_aux  
+                                                  #     27,3 %  tma_frontend_bound       (0,31%)
+
+       0,166510464 seconds time elapsed
+
+       0,116043000 seconds user
+       0,051462000 seconds sys
+
+
+# started on Tue May 13 22:13:03 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,72 msec task-clock                       #    1,005 CPUs utilized             
+                45      context-switches                 #  265,149 /sec                      
+                13      cpu-migrations                   #   76,599 /sec                      
+            49.002      page-faults                      #  288,729 K/sec                     
+       536.215.001      cpu_atom/cycles/                 #    3,159 GHz                         (0,35%)
+       771.244.952      cpu_core/cycles/                 #    4,544 GHz                         (98,48%)
+       612.241.498      cpu_atom/instructions/           #    1,14  insn per cycle              (0,96%)
+     1.317.368.528      cpu_core/instructions/           #    2,46  insn per cycle              (98,48%)
+       102.159.459      cpu_atom/branches/               #  601,943 M/sec                       (1,75%)
+       256.658.525      cpu_core/branches/               #    1,512 G/sec                       (98,48%)
+           818.799      cpu_atom/branch-misses/          #    0,80% of all branches             (1,76%)
+         3.198.279      cpu_core/branch-misses/          #    3,13% of all branches             (98,48%)
+             TopdownL1 (cpu_core)                 #     50,3 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,5 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (98,48%)
+             TopdownL1 (cpu_atom)                 #      1,0 %  tma_bad_speculation    
+                                                  #     28,2 %  tma_retiring             (1,76%)
+                                                  #     51,7 %  tma_backend_bound      
+                                                  #     51,7 %  tma_backend_bound_aux  
+                                                  #     19,1 %  tma_frontend_bound       (1,76%)
+
+       0,168910892 seconds time elapsed
+
+       0,117882000 seconds user
+       0,052392000 seconds sys
+
+
+# started on Tue May 13 22:13:08 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            171,08 msec task-clock                       #    1,005 CPUs utilized             
+                47      context-switches                 #  274,731 /sec                      
+                13      cpu-migrations                   #   75,989 /sec                      
+            49.001      page-faults                      #  286,427 K/sec                     
+       475.450.751      cpu_atom/cycles/                 #    2,779 GHz                         (1,18%)
+       775.653.066      cpu_core/cycles/                 #    4,534 GHz                         (97,88%)
+       524.442.996      cpu_atom/instructions/           #    1,10  insn per cycle              (1,79%)
+     1.323.201.119      cpu_core/instructions/           #    2,78  insn per cycle              (97,88%)
+       107.700.331      cpu_atom/branches/               #  629,544 M/sec                       (1,62%)
+       257.740.908      cpu_core/branches/               #    1,507 G/sec                       (97,88%)
+           684.958      cpu_atom/branch-misses/          #    0,64% of all branches             (2,40%)
+         3.227.863      cpu_core/branch-misses/          #    3,00% of all branches             (97,88%)
+             TopdownL1 (cpu_core)                 #     50,5 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,3 %  tma_retiring             (97,88%)
+             TopdownL1 (cpu_atom)                 #      1,1 %  tma_bad_speculation    
+                                                  #     27,3 %  tma_retiring             (2,40%)
+                                                  #     53,6 %  tma_backend_bound      
+                                                  #     53,6 %  tma_backend_bound_aux  
+                                                  #     18,1 %  tma_frontend_bound       (2,40%)
+
+       0,170200690 seconds time elapsed
+
+       0,127408000 seconds user
+       0,044491000 seconds sys
+
+
+# started on Tue May 13 22:13:13 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,37 msec task-clock                       #    1,005 CPUs utilized             
+                46      context-switches                 #  271,593 /sec                      
+                13      cpu-migrations                   #   76,755 /sec                      
+            49.001      page-faults                      #  289,312 K/sec                     
+       426.857.656      cpu_atom/cycles/                 #    2,520 GHz                         (0,67%)
+       770.367.537      cpu_core/cycles/                 #    4,548 GHz                         (98,41%)
+       481.598.187      cpu_atom/instructions/           #    1,13  insn per cycle              (1,28%)
+     1.317.569.177      cpu_core/instructions/           #    3,09  insn per cycle              (98,41%)
+       106.725.278      cpu_atom/branches/               #  630,128 M/sec                       (1,60%)
+       256.730.430      cpu_core/branches/               #    1,516 G/sec                       (98,41%)
+           814.205      cpu_atom/branch-misses/          #    0,76% of all branches             (1,90%)
+         3.260.840      cpu_core/branch-misses/          #    3,06% of all branches             (98,41%)
+             TopdownL1 (cpu_core)                 #     50,2 %  tma_backend_bound      
+                                                  #      8,1 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,2 %  tma_retiring             (98,41%)
+             TopdownL1 (cpu_atom)                 #      1,9 %  tma_bad_speculation    
+                                                  #     28,1 %  tma_retiring             (1,90%)
+                                                  #     47,4 %  tma_backend_bound      
+                                                  #     47,4 %  tma_backend_bound_aux  
+                                                  #     22,6 %  tma_frontend_bound       (1,90%)
+
+       0,168509941 seconds time elapsed
+
+       0,118871000 seconds user
+       0,050369000 seconds sys
+
+
+# started on Tue May 13 22:13:18 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,35 msec task-clock                       #    1,005 CPUs utilized             
+                46      context-switches                 #  271,621 /sec                      
+                12      cpu-migrations                   #   70,858 /sec                      
+            49.001      page-faults                      #  289,341 K/sec                     
+       400.207.169      cpu_atom/cycles/                 #    2,363 GHz                         (0,43%)
+       767.422.938      cpu_core/cycles/                 #    4,531 GHz                         (98,62%)
+       476.238.824      cpu_atom/instructions/           #    1,19  insn per cycle              (1,05%)
+     1.319.251.858      cpu_core/instructions/           #    3,30  insn per cycle              (98,62%)
+       111.740.562      cpu_atom/branches/               #  659,806 M/sec                       (1,33%)
+       256.697.114      cpu_core/branches/               #    1,516 G/sec                       (98,62%)
+           914.843      cpu_atom/branch-misses/          #    0,82% of all branches             (1,67%)
+         3.242.470      cpu_core/branch-misses/          #    2,90% of all branches             (98,62%)
+             TopdownL1 (cpu_core)                 #     49,9 %  tma_backend_bound      
+                                                  #      8,2 %  tma_bad_speculation    
+                                                  #     12,3 %  tma_frontend_bound     
+                                                  #     29,6 %  tma_retiring             (98,62%)
+             TopdownL1 (cpu_atom)                 #      5,2 %  tma_bad_speculation    
+                                                  #     28,9 %  tma_retiring             (1,67%)
+                                                  #     41,5 %  tma_backend_bound      
+                                                  #     41,5 %  tma_backend_bound_aux  
+                                                  #     24,4 %  tma_frontend_bound       (1,67%)
+
+       0,168550644 seconds time elapsed
+
+       0,109628000 seconds user
+       0,060345000 seconds sys
+
+
+# started on Tue May 13 22:13:23 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            171,12 msec task-clock                       #    1,004 CPUs utilized             
+                46      context-switches                 #  268,817 /sec                      
+                14      cpu-migrations                   #   81,814 /sec                      
+            49.000      page-faults                      #  286,348 K/sec                     
+       421.763.428      cpu_atom/cycles/                 #    2,465 GHz                         (0,71%)
+       775.856.622      cpu_core/cycles/                 #    4,534 GHz                         (99,51%)
+       439.547.153      cpu_atom/instructions/           #    1,04  insn per cycle              (0,72%)
+     1.316.048.246      cpu_core/instructions/           #    3,12  insn per cycle              (99,51%)
+        78.086.630      cpu_atom/branches/               #  456,326 M/sec                       (0,72%)
+       255.886.375      cpu_core/branches/               #    1,495 G/sec                       (99,51%)
+           557.566      cpu_atom/branch-misses/          #    0,71% of all branches             (0,72%)
+         3.206.604      cpu_core/branch-misses/          #    4,11% of all branches             (99,51%)
+             TopdownL1 (cpu_core)                 #     50,7 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,3 %  tma_frontend_bound     
+                                                  #     29,2 %  tma_retiring             (99,51%)
+             TopdownL1 (cpu_atom)                 #     55,8 %  tma_bad_speculation    
+                                                  #     22,4 %  tma_retiring             (0,72%)
+                                                  #     10,2 %  tma_backend_bound      
+                                                  #     10,2 %  tma_backend_bound_aux  
+                                                  #     11,6 %  tma_frontend_bound       (0,72%)
+
+       0,170479685 seconds time elapsed
+
+       0,112572000 seconds user
+       0,058296000 seconds sys
+
+
+# started on Tue May 13 22:13:28 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            172,47 msec task-clock                       #    1,005 CPUs utilized             
+                48      context-switches                 #  278,307 /sec                      
+                18      cpu-migrations                   #  104,365 /sec                      
+            49.002      page-faults                      #  284,117 K/sec                     
+        53.537.252      cpu_atom/cycles/                 #    0,310 GHz                         (74,74%)
+       783.171.565      cpu_core/cycles/                 #    4,541 GHz                         (90,89%)
+        56.100.696      cpu_atom/instructions/           #    1,05  insn per cycle              (87,80%)
+     1.375.066.646      cpu_core/instructions/           #   25,68  insn per cycle              (90,89%)
+        10.031.997      cpu_atom/branches/               #   58,166 M/sec                       (87,15%)
+       268.703.806      cpu_core/branches/               #    1,558 G/sec                       (90,89%)
+            45.039      cpu_atom/branch-misses/          #    0,45% of all branches             (87,12%)
+         3.487.967      cpu_core/branch-misses/          #   34,77% of all branches             (90,89%)
+             TopdownL1 (cpu_core)                 #     49,8 %  tma_backend_bound      
+                                                  #      8,2 %  tma_bad_speculation    
+                                                  #     12,0 %  tma_frontend_bound     
+                                                  #     30,1 %  tma_retiring             (90,89%)
+             TopdownL1 (cpu_atom)                 #      4,4 %  tma_bad_speculation    
+                                                  #     29,6 %  tma_retiring             (87,18%)
+                                                  #     49,7 %  tma_backend_bound      
+                                                  #     49,7 %  tma_backend_bound_aux  
+                                                  #     16,3 %  tma_frontend_bound       (87,16%)
+
+       0,171584755 seconds time elapsed
+
+       0,114841000 seconds user
+       0,057420000 seconds sys
+
+
+# started on Tue May 13 22:13:33 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,48 msec task-clock                       #    1,005 CPUs utilized             
+                48      context-switches                 #  283,218 /sec                      
+                21      cpu-migrations                   #  123,908 /sec                      
+            49.000      page-faults                      #  289,118 K/sec                     
+        33.071.509      cpu_atom/cycles/                 #    0,195 GHz                         (12,77%)
+       769.598.108      cpu_core/cycles/                 #    4,541 GHz                         (98,00%)
+        40.188.032      cpu_atom/instructions/           #    1,22  insn per cycle              (21,03%)
+     1.319.074.547      cpu_core/instructions/           #   39,89  insn per cycle              (98,00%)
+         8.050.000      cpu_atom/branches/               #   47,498 M/sec                       (18,36%)
+       257.159.405      cpu_core/branches/               #    1,517 G/sec                       (98,00%)
+            54.147      cpu_atom/branch-misses/          #    0,67% of all branches             (29,23%)
+         3.239.721      cpu_core/branch-misses/          #   40,24% of all branches             (98,00%)
+             TopdownL1 (cpu_core)                 #     50,2 %  tma_backend_bound      
+                                                  #      8,0 %  tma_bad_speculation    
+                                                  #     12,3 %  tma_frontend_bound     
+                                                  #     29,5 %  tma_retiring             (98,00%)
+             TopdownL1 (cpu_atom)                 #      3,8 %  tma_bad_speculation    
+                                                  #     28,6 %  tma_retiring             (29,30%)
+                                                  #     48,2 %  tma_backend_bound      
+                                                  #     48,2 %  tma_backend_bound_aux  
+                                                  #     19,4 %  tma_frontend_bound       (29,30%)
+
+       0,168554434 seconds time elapsed
+
+       0,119581000 seconds user
+       0,050244000 seconds sys
+
+
+# started on Tue May 13 22:13:38 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            170,88 msec task-clock                       #    1,005 CPUs utilized             
+                47      context-switches                 #  275,047 /sec                      
+                13      cpu-migrations                   #   76,077 /sec                      
+            49.002      page-faults                      #  286,763 K/sec                     
+       458.650.037      cpu_atom/cycles/                 #    2,684 GHz                         (1,04%)
+       774.094.651      cpu_core/cycles/                 #    4,530 GHz                         (98,09%)
+       516.038.768      cpu_atom/instructions/           #    1,13  insn per cycle              (1,66%)
+     1.320.700.380      cpu_core/instructions/           #    2,88  insn per cycle              (98,09%)
+        96.767.182      cpu_atom/branches/               #  566,287 M/sec                       (1,66%)
+       257.247.478      cpu_core/branches/               #    1,505 G/sec                       (98,09%)
+           716.265      cpu_atom/branch-misses/          #    0,74% of all branches             (1,98%)
+         3.245.519      cpu_core/branch-misses/          #    3,35% of all branches             (98,09%)
+             TopdownL1 (cpu_core)                 #     50,5 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,3 %  tma_retiring             (98,09%)
+             TopdownL1 (cpu_atom)                 #      3,9 %  tma_bad_speculation    
+                                                  #     31,2 %  tma_retiring             (2,17%)
+                                                  #     43,4 %  tma_backend_bound      
+                                                  #     43,4 %  tma_backend_bound_aux  
+                                                  #     21,5 %  tma_frontend_bound       (2,27%)
+
+       0,170099041 seconds time elapsed
+
+       0,119404000 seconds user
+       0,051314000 seconds sys
+
+
+# started on Tue May 13 22:13:43 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,60 msec task-clock                       #    1,005 CPUs utilized             
+                47      context-switches                 #  277,128 /sec                      
+                16      cpu-migrations                   #   94,341 /sec                      
+            49.001      page-faults                      #  288,927 K/sec                     
+       458.189.839      cpu_atom/cycles/                 #    2,702 GHz                         (1,01%)
+       770.700.613      cpu_core/cycles/                 #    4,544 GHz                         (98,02%)
+       492.515.230      cpu_atom/instructions/           #    1,07  insn per cycle              (1,62%)
+     1.320.783.981      cpu_core/instructions/           #    2,88  insn per cycle              (98,02%)
+       103.282.904      cpu_atom/branches/               #  608,991 M/sec                       (1,54%)
+       257.418.579      cpu_core/branches/               #    1,518 G/sec                       (98,02%)
+           713.893      cpu_atom/branch-misses/          #    0,69% of all branches             (2,23%)
+         3.249.325      cpu_core/branch-misses/          #    3,15% of all branches             (98,02%)
+             TopdownL1 (cpu_core)                 #     50,1 %  tma_backend_bound      
+                                                  #      8,2 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,3 %  tma_retiring             (98,02%)
+             TopdownL1 (cpu_atom)                 #      1,0 %  tma_bad_speculation    
+                                                  #     26,5 %  tma_retiring             (2,24%)
+                                                  #     52,6 %  tma_backend_bound      
+                                                  #     52,6 %  tma_backend_bound_aux  
+                                                  #     19,9 %  tma_frontend_bound       (2,24%)
+
+       0,168818525 seconds time elapsed
+
+       0,125655000 seconds user
+       0,044230000 seconds sys
+
+
+# started on Tue May 13 22:13:48 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            173,33 msec task-clock                       #    1,005 CPUs utilized             
+                46      context-switches                 #  265,387 /sec                      
+                12      cpu-migrations                   #   69,231 /sec                      
+            49.001      page-faults                      #  282,701 K/sec                     
+       553.497.857      cpu_atom/cycles/                 #    3,193 GHz                         (0,41%)
+       776.630.191      cpu_core/cycles/                 #    4,481 GHz                         (98,93%)
+       614.812.249      cpu_atom/instructions/           #    1,11  insn per cycle              (1,01%)
+     1.315.944.215      cpu_core/instructions/           #    2,38  insn per cycle              (98,93%)
+        94.373.079      cpu_atom/branches/               #  544,465 M/sec                       (1,35%)
+       256.177.401      cpu_core/branches/               #    1,478 G/sec                       (98,93%)
+         1.067.249      cpu_atom/branch-misses/          #    1,13% of all branches             (1,35%)
+         3.211.554      cpu_core/branch-misses/          #    3,40% of all branches             (98,93%)
+             TopdownL1 (cpu_core)                 #     50,1 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,8 %  tma_frontend_bound     
+                                                  #     29,3 %  tma_retiring             (98,93%)
+             TopdownL1 (cpu_atom)                 #      3,0 %  tma_bad_speculation    
+                                                  #     28,0 %  tma_retiring             (1,35%)
+                                                  #     43,5 %  tma_backend_bound      
+                                                  #     43,5 %  tma_backend_bound_aux  
+                                                  #     25,5 %  tma_frontend_bound       (1,35%)
+
+       0,172409908 seconds time elapsed
+
+       0,125295000 seconds user
+       0,048501000 seconds sys
+
+
+# started on Tue May 13 22:13:53 2025
+
+
+ Performance counter stats for './parallel 1 4096':
+
+            169,55 msec task-clock                       #    1,006 CPUs utilized             
+                48      context-switches                 #  283,099 /sec                      
+                17      cpu-migrations                   #  100,264 /sec                      
+            49.001      page-faults                      #  289,003 K/sec                     
+       540.614.435      cpu_atom/cycles/                 #    3,188 GHz                         (0,46%)
+       771.137.840      cpu_core/cycles/                 #    4,548 GHz                         (98,78%)
+       601.173.867      cpu_atom/instructions/           #    1,11  insn per cycle              (1,08%)
+     1.317.182.182      cpu_core/instructions/           #    2,44  insn per cycle              (98,78%)
+        91.666.657      cpu_atom/branches/               #  540,641 M/sec                       (1,43%)
+       256.447.985      cpu_core/branches/               #    1,513 G/sec                       (98,78%)
+           992.711      cpu_atom/branch-misses/          #    1,08% of all branches             (1,43%)
+         3.204.118      cpu_core/branch-misses/          #    3,50% of all branches             (98,78%)
+             TopdownL1 (cpu_core)                 #     50,4 %  tma_backend_bound      
+                                                  #      7,8 %  tma_bad_speculation    
+                                                  #     12,4 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (98,78%)
+             TopdownL1 (cpu_atom)                 #      3,2 %  tma_bad_speculation    
+                                                  #     27,9 %  tma_retiring             (1,43%)
+                                                  #     43,5 %  tma_backend_bound      
+                                                  #     43,5 %  tma_backend_bound_aux  
+                                                  #     25,4 %  tma_frontend_bound       (1,43%)
+
+       0,168573322 seconds time elapsed
+
+       0,120058000 seconds user
+       0,049435000 seconds sys
+
+

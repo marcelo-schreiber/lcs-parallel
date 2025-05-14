@@ -1,0 +1,645 @@
+# started on Tue May 13 21:59:53 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.552,49 msec task-clock                       #    1,000 CPUs utilized             
+                 8      context-switches                 #    3,134 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.582      page-faults                      #  306,204 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0,00%)
+    11.689.416.651      cpu_core/cycles/                 #    4,580 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0,00%)
+    22.421.945.688      cpu_core/instructions/                                                
+     <not counted>      cpu_atom/branches/                                                      (0,00%)
+     4.059.564.236      cpu_core/branches/               #    1,590 G/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0,00%)
+        62.396.205      cpu_core/branch-misses/                                               
+             TopdownL1 (cpu_core)                 #     48,4 %  tma_backend_bound      
+                                                  #     10,3 %  tma_bad_speculation    
+                                                  #     13,0 %  tma_frontend_bound     
+                                                  #     28,3 %  tma_retiring           
+
+       2,553120394 seconds time elapsed
+
+       1,793173000 seconds user
+       0,759650000 seconds sys
+
+
+# started on Tue May 13 22:00:31 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.552,51 msec task-clock                       #    1,000 CPUs utilized             
+                 8      context-switches                 #    3,134 /sec                      
+                 3      cpu-migrations                   #    1,175 /sec                      
+           781.581      page-faults                      #  306,201 K/sec                     
+     8.495.312.202      cpu_atom/cycles/                 #    3,328 GHz                         (0,04%)
+    11.707.946.532      cpu_core/cycles/                 #    4,587 GHz                         (99,88%)
+    10.221.039.152      cpu_atom/instructions/           #    1,20  insn per cycle              (0,08%)
+    22.438.029.846      cpu_core/instructions/           #    2,64  insn per cycle              (99,88%)
+     2.098.855.301      cpu_atom/branches/               #  822,271 M/sec                       (0,08%)
+     4.062.252.785      cpu_core/branches/               #    1,591 G/sec                       (99,88%)
+         9.656.244      cpu_atom/branch-misses/          #    0,46% of all branches             (0,12%)
+        62.415.580      cpu_core/branch-misses/          #    2,97% of all branches             (99,88%)
+             TopdownL1 (cpu_core)                 #     48,6 %  tma_backend_bound      
+                                                  #     10,3 %  tma_bad_speculation    
+                                                  #     12,6 %  tma_frontend_bound     
+                                                  #     28,4 %  tma_retiring             (99,88%)
+             TopdownL1 (cpu_atom)                 #      3,6 %  tma_bad_speculation    
+                                                  #     31,0 %  tma_retiring             (0,12%)
+                                                  #     36,3 %  tma_backend_bound      
+                                                  #     36,3 %  tma_backend_bound_aux  
+                                                  #     29,1 %  tma_frontend_bound       (0,12%)
+
+       2,553227831 seconds time elapsed
+
+       1,766908000 seconds user
+       0,785959000 seconds sys
+
+
+# started on Tue May 13 22:01:08 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.557,90 msec task-clock                       #    1,000 CPUs utilized             
+                11      context-switches                 #    4,300 /sec                      
+                 2      cpu-migrations                   #    0,782 /sec                      
+           781.581      page-faults                      #  305,556 K/sec                     
+     8.626.086.428      cpu_atom/cycles/                 #    3,372 GHz                         (0,50%)
+    11.733.700.920      cpu_core/cycles/                 #    4,587 GHz                         (99,27%)
+     9.078.084.393      cpu_atom/instructions/           #    1,05  insn per cycle              (0,62%)
+    22.520.237.482      cpu_core/instructions/           #    2,61  insn per cycle              (99,27%)
+     1.672.224.432      cpu_atom/branches/               #  653,749 M/sec                       (0,65%)
+     4.077.234.714      cpu_core/branches/               #    1,594 G/sec                       (99,27%)
+         5.215.735      cpu_atom/branch-misses/          #    0,31% of all branches             (0,65%)
+        62.804.942      cpu_core/branch-misses/          #    3,76% of all branches             (99,27%)
+             TopdownL1 (cpu_core)                 #     49,4 %  tma_backend_bound      
+                                                  #      9,6 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,2 %  tma_retiring             (99,27%)
+             TopdownL1 (cpu_atom)                 #      1,3 %  tma_bad_speculation    
+                                                  #     29,6 %  tma_retiring             (0,65%)
+                                                  #     42,0 %  tma_backend_bound      
+                                                  #     42,0 %  tma_backend_bound_aux  
+                                                  #     27,1 %  tma_frontend_bound       (0,65%)
+
+       2,558559853 seconds time elapsed
+
+       1,806172000 seconds user
+       0,752071000 seconds sys
+
+
+# started on Tue May 13 22:01:45 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.548,36 msec task-clock                       #    1,000 CPUs utilized             
+                 9      context-switches                 #    3,532 /sec                      
+                 2      cpu-migrations                   #    0,785 /sec                      
+           781.581      page-faults                      #  306,700 K/sec                     
+     8.490.190.044      cpu_atom/cycles/                 #    3,332 GHz                         (0,05%)
+    11.692.568.526      cpu_core/cycles/                 #    4,588 GHz                         (99,88%)
+    11.183.615.878      cpu_atom/instructions/           #    1,32  insn per cycle              (0,08%)
+    22.437.329.458      cpu_core/instructions/           #    2,64  insn per cycle              (99,88%)
+     2.247.505.988      cpu_atom/branches/               #  881,942 M/sec                       (0,08%)
+     4.062.869.023      cpu_core/branches/               #    1,594 G/sec                       (99,88%)
+        10.355.009      cpu_atom/branch-misses/          #    0,46% of all branches             (0,12%)
+        62.486.453      cpu_core/branch-misses/          #    2,78% of all branches             (99,88%)
+             TopdownL1 (cpu_core)                 #     48,6 %  tma_backend_bound      
+                                                  #      9,9 %  tma_bad_speculation    
+                                                  #     13,0 %  tma_frontend_bound     
+                                                  #     28,4 %  tma_retiring             (99,88%)
+             TopdownL1 (cpu_atom)                 #      3,5 %  tma_bad_speculation    
+                                                  #     34,7 %  tma_retiring             (0,12%)
+                                                  #     36,8 %  tma_backend_bound      
+                                                  #     36,8 %  tma_backend_bound_aux  
+                                                  #     25,0 %  tma_frontend_bound       (0,12%)
+
+       2,548993331 seconds time elapsed
+
+       1,790769000 seconds user
+       0,757902000 seconds sys
+
+
+# started on Tue May 13 22:02:22 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.552,31 msec task-clock                       #    1,000 CPUs utilized             
+                 9      context-switches                 #    3,526 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.581      page-faults                      #  306,225 K/sec                     
+     8.506.285.112      cpu_atom/cycles/                 #    3,333 GHz                         (0,03%)
+    11.709.229.318      cpu_core/cycles/                 #    4,588 GHz                         (99,89%)
+    11.051.866.869      cpu_atom/instructions/           #    1,30  insn per cycle              (0,07%)
+    22.435.114.857      cpu_core/instructions/           #    2,64  insn per cycle              (99,89%)
+     2.072.712.966      cpu_atom/branches/               #  812,092 M/sec                       (0,11%)
+     4.061.759.946      cpu_core/branches/               #    1,591 G/sec                       (99,89%)
+        10.508.568      cpu_atom/branch-misses/          #    0,51% of all branches             (0,11%)
+        62.441.465      cpu_core/branch-misses/          #    3,01% of all branches             (99,89%)
+             TopdownL1 (cpu_core)                 #     49,2 %  tma_backend_bound      
+                                                  #     10,0 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,1 %  tma_retiring             (99,89%)
+             TopdownL1 (cpu_atom)                 #     -3,3 %  tma_bad_speculation    
+                                                  #     32,9 %  tma_retiring             (0,11%)
+                                                  #     46,7 %  tma_backend_bound      
+                                                  #     46,7 %  tma_backend_bound_aux  
+                                                  #     23,7 %  tma_frontend_bound       (0,11%)
+
+       2,552949118 seconds time elapsed
+
+       1,774771000 seconds user
+       0,777899000 seconds sys
+
+
+# started on Tue May 13 22:02:59 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.552,18 msec task-clock                       #    1,000 CPUs utilized             
+                 5      context-switches                 #    1,959 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.582      page-faults                      #  306,241 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0,00%)
+    11.700.464.325      cpu_core/cycles/                 #    4,584 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0,00%)
+    22.421.026.026      cpu_core/instructions/                                                
+     <not counted>      cpu_atom/branches/                                                      (0,00%)
+     4.059.445.522      cpu_core/branches/               #    1,591 G/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0,00%)
+        62.440.911      cpu_core/branch-misses/                                               
+             TopdownL1 (cpu_core)                 #     48,4 %  tma_backend_bound      
+                                                  #     10,3 %  tma_bad_speculation    
+                                                  #     13,0 %  tma_frontend_bound     
+                                                  #     28,3 %  tma_retiring           
+
+       2,552833265 seconds time elapsed
+
+       1,846627000 seconds user
+       0,705857000 seconds sys
+
+
+# started on Tue May 13 22:03:36 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.548,10 msec task-clock                       #    1,000 CPUs utilized             
+                13      context-switches                 #    5,102 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.581      page-faults                      #  306,731 K/sec                     
+     8.487.396.960      cpu_atom/cycles/                 #    3,331 GHz                         (0,03%)
+    11.689.994.836      cpu_core/cycles/                 #    4,588 GHz                         (99,89%)
+    11.210.445.064      cpu_atom/instructions/           #    1,32  insn per cycle              (0,07%)
+    22.435.136.092      cpu_core/instructions/           #    2,64  insn per cycle              (99,89%)
+     2.070.316.345      cpu_atom/branches/               #  812,494 M/sec                       (0,11%)
+     4.061.776.033      cpu_core/branches/               #    1,594 G/sec                       (99,89%)
+        10.235.250      cpu_atom/branch-misses/          #    0,49% of all branches             (0,11%)
+        62.497.665      cpu_core/branch-misses/          #    3,02% of all branches             (99,89%)
+             TopdownL1 (cpu_core)                 #     49,2 %  tma_backend_bound      
+                                                  #      9,6 %  tma_bad_speculation    
+                                                  #     13,1 %  tma_frontend_bound     
+                                                  #     28,1 %  tma_retiring             (99,89%)
+             TopdownL1 (cpu_atom)                 #     -2,1 %  tma_bad_speculation    
+                                                  #     32,9 %  tma_retiring             (0,11%)
+                                                  #     41,6 %  tma_backend_bound      
+                                                  #     41,6 %  tma_backend_bound_aux  
+                                                  #     27,7 %  tma_frontend_bound       (0,11%)
+
+       2,548757443 seconds time elapsed
+
+       1,813294000 seconds user
+       0,735119000 seconds sys
+
+
+# started on Tue May 13 22:04:14 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.550,19 msec task-clock                       #    1,000 CPUs utilized             
+                12      context-switches                 #    4,706 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.582      page-faults                      #  306,480 K/sec                     
+     8.522.396.374      cpu_atom/cycles/                 #    3,342 GHz                         (0,05%)
+    11.699.790.965      cpu_core/cycles/                 #    4,588 GHz                         (99,87%)
+    10.492.915.968      cpu_atom/instructions/           #    1,23  insn per cycle              (0,09%)
+    22.437.898.523      cpu_core/instructions/           #    2,63  insn per cycle              (99,87%)
+     2.103.628.550      cpu_atom/branches/               #  824,892 M/sec                       (0,09%)
+     4.062.274.869      cpu_core/branches/               #    1,593 G/sec                       (99,87%)
+         9.583.555      cpu_atom/branch-misses/          #    0,46% of all branches             (0,13%)
+        62.453.559      cpu_core/branch-misses/          #    2,97% of all branches             (99,87%)
+             TopdownL1 (cpu_core)                 #     48,8 %  tma_backend_bound      
+                                                  #     10,3 %  tma_bad_speculation    
+                                                  #     12,6 %  tma_frontend_bound     
+                                                  #     28,3 %  tma_retiring             (99,87%)
+             TopdownL1 (cpu_atom)                 #      3,2 %  tma_bad_speculation    
+                                                  #     32,4 %  tma_retiring             (0,13%)
+                                                  #     33,2 %  tma_backend_bound      
+                                                  #     33,2 %  tma_backend_bound_aux  
+                                                  #     31,3 %  tma_frontend_bound       (0,13%)
+
+       2,550835315 seconds time elapsed
+
+       1,771661000 seconds user
+       0,778851000 seconds sys
+
+
+# started on Tue May 13 22:04:51 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.547,93 msec task-clock                       #    1,000 CPUs utilized             
+                11      context-switches                 #    4,317 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.583      page-faults                      #  306,752 K/sec                     
+     8.518.778.268      cpu_atom/cycles/                 #    3,343 GHz                         (0,07%)
+    11.686.352.425      cpu_core/cycles/                 #    4,587 GHz                         (99,85%)
+    10.324.489.969      cpu_atom/instructions/           #    1,21  insn per cycle              (0,11%)
+    22.438.020.778      cpu_core/instructions/           #    2,63  insn per cycle              (99,85%)
+     2.046.733.282      cpu_atom/branches/               #  803,291 M/sec                       (0,11%)
+     4.062.365.129      cpu_core/branches/               #    1,594 G/sec                       (99,85%)
+         8.899.794      cpu_atom/branch-misses/          #    0,43% of all branches             (0,15%)
+        62.483.812      cpu_core/branch-misses/          #    3,05% of all branches             (99,85%)
+             TopdownL1 (cpu_core)                 #     48,8 %  tma_backend_bound      
+                                                  #     10,0 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,5 %  tma_retiring             (99,85%)
+             TopdownL1 (cpu_atom)                 #     -0,5 %  tma_bad_speculation    
+                                                  #     31,9 %  tma_retiring             (0,15%)
+                                                  #     39,5 %  tma_backend_bound      
+                                                  #     39,5 %  tma_backend_bound_aux  
+                                                  #     29,1 %  tma_frontend_bound       (0,15%)
+
+       2,548558795 seconds time elapsed
+
+       1,786190000 seconds user
+       0,762081000 seconds sys
+
+
+# started on Tue May 13 22:05:28 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.549,53 msec task-clock                       #    1,000 CPUs utilized             
+                 9      context-switches                 #    3,530 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.582      page-faults                      #  306,559 K/sec                     
+     8.515.541.905      cpu_atom/cycles/                 #    3,340 GHz                         (0,05%)
+    11.696.959.608      cpu_core/cycles/                 #    4,588 GHz                         (99,87%)
+    10.796.295.904      cpu_atom/instructions/           #    1,27  insn per cycle              (0,09%)
+    22.437.214.932      cpu_core/instructions/           #    2,63  insn per cycle              (99,87%)
+     2.236.370.805      cpu_atom/branches/               #  877,169 M/sec                       (0,09%)
+     4.062.150.801      cpu_core/branches/               #    1,593 G/sec                       (99,87%)
+         9.696.632      cpu_atom/branch-misses/          #    0,43% of all branches             (0,13%)
+        62.522.700      cpu_core/branch-misses/          #    2,80% of all branches             (99,87%)
+             TopdownL1 (cpu_core)                 #     48,4 %  tma_backend_bound      
+                                                  #     10,3 %  tma_bad_speculation    
+                                                  #     13,0 %  tma_frontend_bound     
+                                                  #     28,3 %  tma_retiring             (99,87%)
+             TopdownL1 (cpu_atom)                 #      2,8 %  tma_bad_speculation    
+                                                  #     34,0 %  tma_retiring             (0,13%)
+                                                  #     36,4 %  tma_backend_bound      
+                                                  #     36,4 %  tma_backend_bound_aux  
+                                                  #     26,7 %  tma_frontend_bound       (0,13%)
+
+       2,550158791 seconds time elapsed
+
+       1,833844000 seconds user
+       0,715939000 seconds sys
+
+
+# started on Tue May 13 22:06:05 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.549,24 msec task-clock                       #    1,000 CPUs utilized             
+                12      context-switches                 #    4,707 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.582      page-faults                      #  306,594 K/sec                     
+     8.550.118.661      cpu_atom/cycles/                 #    3,354 GHz                         (0,09%)
+    11.696.179.521      cpu_core/cycles/                 #    4,588 GHz                         (99,83%)
+     9.979.100.382      cpu_atom/instructions/           #    1,17  insn per cycle              (0,13%)
+    22.442.807.044      cpu_core/instructions/           #    2,62  insn per cycle              (99,83%)
+     1.957.752.947      cpu_atom/branches/               #  767,974 M/sec                       (0,13%)
+     4.063.171.834      cpu_core/branches/               #    1,594 G/sec                       (99,83%)
+         9.515.793      cpu_atom/branch-misses/          #    0,49% of all branches             (0,13%)
+        62.594.567      cpu_core/branch-misses/          #    3,20% of all branches             (99,83%)
+             TopdownL1 (cpu_core)                 #     49,4 %  tma_backend_bound      
+                                                  #      9,6 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,2 %  tma_retiring             (99,83%)
+             TopdownL1 (cpu_atom)                 #      3,1 %  tma_bad_speculation    
+                                                  #     31,7 %  tma_retiring             (0,16%)
+                                                  #     35,9 %  tma_backend_bound      
+                                                  #     35,9 %  tma_backend_bound_aux  
+                                                  #     29,3 %  tma_frontend_bound       (0,17%)
+
+       2,549904978 seconds time elapsed
+
+       1,821702000 seconds user
+       0,727881000 seconds sys
+
+
+# started on Tue May 13 22:06:42 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.551,81 msec task-clock                       #    1,000 CPUs utilized             
+                11      context-switches                 #    4,311 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.581      page-faults                      #  306,285 K/sec                     
+     8.562.711.644      cpu_atom/cycles/                 #    3,356 GHz                         (0,03%)
+    11.707.146.309      cpu_core/cycles/                 #    4,588 GHz                         (99,93%)
+    10.827.795.354      cpu_atom/instructions/           #    1,26  insn per cycle              (0,07%)
+    22.430.859.548      cpu_core/instructions/           #    2,62  insn per cycle              (99,93%)
+     2.201.435.796      cpu_atom/branches/               #  862,697 M/sec                       (0,07%)
+     4.060.982.085      cpu_core/branches/               #    1,591 G/sec                       (99,93%)
+        13.071.022      cpu_atom/branch-misses/          #    0,59% of all branches             (0,07%)
+        62.439.855      cpu_core/branch-misses/          #    2,84% of all branches             (99,93%)
+             TopdownL1 (cpu_core)                 #     49,0 %  tma_backend_bound      
+                                                  #      9,9 %  tma_bad_speculation    
+                                                  #     13,0 %  tma_frontend_bound     
+                                                  #     28,0 %  tma_retiring             (99,93%)
+             TopdownL1 (cpu_atom)                 #     -3,5 %  tma_bad_speculation    
+                                                  #     32,9 %  tma_retiring             (0,07%)
+                                                  #     37,8 %  tma_backend_bound      
+                                                  #     37,8 %  tma_backend_bound_aux  
+                                                  #     32,8 %  tma_frontend_bound       (0,07%)
+
+       2,552462559 seconds time elapsed
+
+       1,814364000 seconds user
+       0,737741000 seconds sys
+
+
+# started on Tue May 13 22:07:19 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.551,38 msec task-clock                       #    1,000 CPUs utilized             
+                 8      context-switches                 #    3,136 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.581      page-faults                      #  306,336 K/sec                     
+     8.346.896.688      cpu_atom/cycles/                 #    3,272 GHz                         (0,02%)
+    11.704.213.605      cpu_core/cycles/                 #    4,587 GHz                         (99,91%)
+    11.330.142.161      cpu_atom/instructions/           #    1,36  insn per cycle              (0,06%)
+    22.432.956.816      cpu_core/instructions/           #    2,69  insn per cycle              (99,91%)
+     2.111.758.859      cpu_atom/branches/               #  827,692 M/sec                       (0,09%)
+     4.061.379.683      cpu_core/branches/               #    1,592 G/sec                       (99,91%)
+        11.871.799      cpu_atom/branch-misses/          #    0,56% of all branches             (0,09%)
+        62.536.749      cpu_core/branch-misses/          #    2,96% of all branches             (99,91%)
+             TopdownL1 (cpu_core)                 #     49,0 %  tma_backend_bound      
+                                                  #     10,3 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,0 %  tma_retiring             (99,91%)
+             TopdownL1 (cpu_atom)                 #      2,1 %  tma_bad_speculation    
+                                                  #     32,8 %  tma_retiring             (0,09%)
+                                                  #     33,4 %  tma_backend_bound      
+                                                  #     33,4 %  tma_backend_bound_aux  
+                                                  #     31,7 %  tma_frontend_bound       (0,09%)
+
+       2,551933886 seconds time elapsed
+
+       1,838746000 seconds user
+       0,712901000 seconds sys
+
+
+# started on Tue May 13 22:07:57 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.568,80 msec task-clock                       #    0,999 CPUs utilized             
+                17      context-switches                 #    6,618 /sec                      
+                10      cpu-migrations                   #    3,893 /sec                      
+           781.583      page-faults                      #  304,260 K/sec                     
+     8.633.841.693      cpu_atom/cycles/                 #    3,361 GHz                         (0,15%)
+    11.784.143.110      cpu_core/cycles/                 #    4,587 GHz                         (99,78%)
+     9.825.670.990      cpu_atom/instructions/           #    1,14  insn per cycle              (0,19%)
+    22.450.417.675      cpu_core/instructions/           #    2,60  insn per cycle              (99,78%)
+     1.881.588.491      cpu_atom/branches/               #  732,477 M/sec                       (0,19%)
+     4.064.532.987      cpu_core/branches/               #    1,582 G/sec                       (99,78%)
+         8.113.504      cpu_atom/branch-misses/          #    0,43% of all branches             (0,19%)
+        62.529.744      cpu_core/branch-misses/          #    3,32% of all branches             (99,78%)
+             TopdownL1 (cpu_core)                 #     49,2 %  tma_backend_bound      
+                                                  #     10,0 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,1 %  tma_retiring             (99,78%)
+             TopdownL1 (cpu_atom)                 #      0,4 %  tma_bad_speculation    
+                                                  #     31,8 %  tma_retiring             (0,19%)
+                                                  #     39,8 %  tma_backend_bound      
+                                                  #     39,8 %  tma_backend_bound_aux  
+                                                  #     28,0 %  tma_frontend_bound       (0,22%)
+
+       2,570737633 seconds time elapsed
+
+       1,797519000 seconds user
+       0,771652000 seconds sys
+
+
+# started on Tue May 13 22:08:34 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.551,91 msec task-clock                       #    1,000 CPUs utilized             
+                 5      context-switches                 #    1,959 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.583      page-faults                      #  306,274 K/sec                     
+     8.524.786.661      cpu_atom/cycles/                 #    3,341 GHz                         (0,04%)
+    11.699.641.537      cpu_core/cycles/                 #    4,585 GHz                         (99,88%)
+    10.642.147.272      cpu_atom/instructions/           #    1,25  insn per cycle              (0,08%)
+    22.436.489.655      cpu_core/instructions/           #    2,63  insn per cycle              (99,88%)
+     2.010.768.818      cpu_atom/branches/               #  787,948 M/sec                       (0,12%)
+     4.062.021.721      cpu_core/branches/               #    1,592 G/sec                       (99,88%)
+         9.831.945      cpu_atom/branch-misses/          #    0,49% of all branches             (0,12%)
+        62.612.351      cpu_core/branch-misses/          #    3,11% of all branches             (99,88%)
+             TopdownL1 (cpu_core)                 #     48,4 %  tma_backend_bound      
+                                                  #     10,4 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,5 %  tma_retiring             (99,88%)
+             TopdownL1 (cpu_atom)                 #     -1,5 %  tma_bad_speculation    
+                                                  #     31,8 %  tma_retiring             (0,12%)
+                                                  #     38,9 %  tma_backend_bound      
+                                                  #     38,9 %  tma_backend_bound_aux  
+                                                  #     30,8 %  tma_frontend_bound       (0,12%)
+
+       2,552553294 seconds time elapsed
+
+       1,790502000 seconds user
+       0,761788000 seconds sys
+
+
+# started on Tue May 13 22:09:11 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.550,63 msec task-clock                       #    1,000 CPUs utilized             
+                 8      context-switches                 #    3,136 /sec                      
+                 1      cpu-migrations                   #    0,392 /sec                      
+           781.583      page-faults                      #  306,428 K/sec                     
+     8.499.618.590      cpu_atom/cycles/                 #    3,332 GHz                         (0,05%)
+    11.699.162.344      cpu_core/cycles/                 #    4,587 GHz                         (99,87%)
+    10.567.091.257      cpu_atom/instructions/           #    1,24  insn per cycle              (0,09%)
+    22.437.261.213      cpu_core/instructions/           #    2,64  insn per cycle              (99,87%)
+     2.132.918.422      cpu_atom/branches/               #  836,233 M/sec                       (0,09%)
+     4.062.157.765      cpu_core/branches/               #    1,593 G/sec                       (99,87%)
+         9.882.012      cpu_atom/branch-misses/          #    0,46% of all branches             (0,12%)
+        62.474.561      cpu_core/branch-misses/          #    2,93% of all branches             (99,87%)
+             TopdownL1 (cpu_core)                 #     48,8 %  tma_backend_bound      
+                                                  #     10,0 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,5 %  tma_retiring             (99,87%)
+             TopdownL1 (cpu_atom)                 #      3,8 %  tma_bad_speculation    
+                                                  #     32,5 %  tma_retiring             (0,13%)
+                                                  #     32,6 %  tma_backend_bound      
+                                                  #     32,6 %  tma_backend_bound_aux  
+                                                  #     31,1 %  tma_frontend_bound       (0,13%)
+
+       2,551239036 seconds time elapsed
+
+       1,813979000 seconds user
+       0,736991000 seconds sys
+
+
+# started on Tue May 13 22:09:49 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.547,08 msec task-clock                       #    1,000 CPUs utilized             
+                 9      context-switches                 #    3,533 /sec                      
+                 1      cpu-migrations                   #    0,393 /sec                      
+           781.581      page-faults                      #  306,854 K/sec                     
+     8.458.922.341      cpu_atom/cycles/                 #    3,321 GHz                         (0,03%)
+    11.684.591.386      cpu_core/cycles/                 #    4,587 GHz                         (99,89%)
+    10.467.087.610      cpu_atom/instructions/           #    1,24  insn per cycle              (0,07%)
+    22.436.073.415      cpu_core/instructions/           #    2,65  insn per cycle              (99,89%)
+     1.956.825.164      cpu_atom/branches/               #  768,262 M/sec                       (0,10%)
+     4.061.916.922      cpu_core/branches/               #    1,595 G/sec                       (99,89%)
+        10.227.098      cpu_atom/branch-misses/          #    0,52% of all branches             (0,11%)
+        62.423.371      cpu_core/branch-misses/          #    3,19% of all branches             (99,89%)
+             TopdownL1 (cpu_core)                 #     49,2 %  tma_backend_bound      
+                                                  #      9,6 %  tma_bad_speculation    
+                                                  #     13,1 %  tma_frontend_bound     
+                                                  #     28,1 %  tma_retiring             (99,89%)
+             TopdownL1 (cpu_atom)                 #     -2,9 %  tma_bad_speculation    
+                                                  #     30,5 %  tma_retiring             (0,11%)
+                                                  #     43,3 %  tma_backend_bound      
+                                                  #     43,3 %  tma_backend_bound_aux  
+                                                  #     29,0 %  tma_frontend_bound       (0,11%)
+
+       2,547715994 seconds time elapsed
+
+       1,815607000 seconds user
+       0,731841000 seconds sys
+
+
+# started on Tue May 13 22:10:26 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.553,68 msec task-clock                       #    1,000 CPUs utilized             
+                10      context-switches                 #    3,916 /sec                      
+                 3      cpu-migrations                   #    1,175 /sec                      
+           781.582      page-faults                      #  306,061 K/sec                     
+     8.606.877.046      cpu_atom/cycles/                 #    3,370 GHz                         (0,26%)
+    11.713.421.109      cpu_core/cycles/                 #    4,587 GHz                         (99,66%)
+     9.646.163.190      cpu_atom/instructions/           #    1,12  insn per cycle              (0,30%)
+    22.464.384.221      cpu_core/instructions/           #    2,61  insn per cycle              (99,66%)
+     1.810.697.059      cpu_atom/branches/               #  709,053 M/sec                       (0,30%)
+     4.067.113.478      cpu_core/branches/               #    1,593 G/sec                       (99,66%)
+         6.763.250      cpu_atom/branch-misses/          #    0,37% of all branches             (0,30%)
+        62.748.627      cpu_core/branch-misses/          #    3,47% of all branches             (99,66%)
+             TopdownL1 (cpu_core)                 #     48,8 %  tma_backend_bound      
+                                                  #     10,0 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,5 %  tma_retiring             (99,66%)
+             TopdownL1 (cpu_atom)                 #      2,3 %  tma_bad_speculation    
+                                                  #     31,4 %  tma_retiring             (0,30%)
+                                                  #     37,2 %  tma_backend_bound      
+                                                  #     37,2 %  tma_backend_bound_aux  
+                                                  #     29,1 %  tma_frontend_bound       (0,30%)
+
+       2,554357148 seconds time elapsed
+
+       1,824024000 seconds user
+       0,730009000 seconds sys
+
+
+# started on Tue May 13 22:11:03 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.543,24 msec task-clock                       #    1,000 CPUs utilized             
+                 3      context-switches                 #    1,180 /sec                      
+                 0      cpu-migrations                   #    0,000 /sec                      
+           781.582      page-faults                      #  307,318 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0,00%)
+    11.670.993.967      cpu_core/cycles/                 #    4,589 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0,00%)
+    22.422.330.141      cpu_core/instructions/                                                
+     <not counted>      cpu_atom/branches/                                                      (0,00%)
+     4.059.617.879      cpu_core/branches/               #    1,596 G/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0,00%)
+        62.402.089      cpu_core/branch-misses/                                               
+             TopdownL1 (cpu_core)                 #     48,8 %  tma_backend_bound      
+                                                  #     10,0 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,5 %  tma_retiring           
+
+       2,543731246 seconds time elapsed
+
+       1,787615000 seconds user
+       0,755837000 seconds sys
+
+
+# started on Tue May 13 22:11:41 2025
+
+
+ Performance counter stats for './sequential':
+
+          2.550,11 msec task-clock                       #    1,000 CPUs utilized             
+                 6      context-switches                 #    2,353 /sec                      
+                 2      cpu-migrations                   #    0,784 /sec                      
+           781.582      page-faults                      #  306,489 K/sec                     
+     8.482.211.662      cpu_atom/cycles/                 #    3,326 GHz                         (0,03%)
+    11.702.004.763      cpu_core/cycles/                 #    4,589 GHz                         (99,89%)
+    11.024.511.791      cpu_atom/instructions/           #    1,30  insn per cycle              (0,07%)
+    22.435.344.380      cpu_core/instructions/           #    2,64  insn per cycle              (99,89%)
+     2.081.472.645      cpu_atom/branches/               #  816,228 M/sec                       (0,10%)
+     4.061.766.533      cpu_core/branches/               #    1,593 G/sec                       (99,89%)
+        10.481.749      cpu_atom/branch-misses/          #    0,50% of all branches             (0,11%)
+        62.434.233      cpu_core/branch-misses/          #    3,00% of all branches             (99,89%)
+             TopdownL1 (cpu_core)                 #     49,0 %  tma_backend_bound      
+                                                  #      9,6 %  tma_bad_speculation    
+                                                  #     12,7 %  tma_frontend_bound     
+                                                  #     28,6 %  tma_retiring             (99,89%)
+             TopdownL1 (cpu_atom)                 #     -3,5 %  tma_bad_speculation    
+                                                  #     32,8 %  tma_retiring             (0,11%)
+                                                  #     46,5 %  tma_backend_bound      
+                                                  #     46,5 %  tma_backend_bound_aux  
+                                                  #     24,3 %  tma_frontend_bound       (0,11%)
+
+       2,550701319 seconds time elapsed
+
+       1,838331000 seconds user
+       0,712128000 seconds sys
+
+

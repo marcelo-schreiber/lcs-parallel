@@ -1,0 +1,660 @@
+# started on Tue May 13 20:43:45 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.848,83 msec task-clock                       #    1,874 CPUs utilized             
+               511      context-switches                 #   47,102 /sec                      
+                27      cpu-migrations                   #    2,489 /sec                      
+         3.186.850      page-faults                      #  293,751 K/sec                     
+    18.500.244.789      cpu_atom/cycles/                 #    1,705 GHz                         (0,06%)
+    48.893.176.326      cpu_core/cycles/                 #    4,507 GHz                         (99,96%)
+    15.034.809.783      cpu_atom/instructions/           #    0,81  insn per cycle              (0,10%)
+    85.005.671.297      cpu_core/instructions/           #    4,59  insn per cycle              (99,96%)
+     3.043.089.204      cpu_atom/branches/               #  280,499 M/sec                       (0,10%)
+    16.492.509.487      cpu_core/branches/               #    1,520 G/sec                       (99,96%)
+        45.198.205      cpu_atom/branch-misses/          #    1,49% of all branches             (0,10%)
+       143.581.551      cpu_core/branch-misses/          #    4,72% of all branches             (99,96%)
+             TopdownL1 (cpu_core)                 #     53,1 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,6 %  tma_frontend_bound     
+                                                  #     29,1 %  tma_retiring             (99,96%)
+             TopdownL1 (cpu_atom)                 #     10,2 %  tma_bad_speculation    
+                                                  #     18,3 %  tma_retiring             (0,11%)
+                                                  #     67,9 %  tma_backend_bound      
+                                                  #     67,9 %  tma_backend_bound_aux  
+                                                  #      3,6 %  tma_frontend_bound       (0,12%)
+
+       5,789637114 seconds time elapsed
+
+       7,686609000 seconds user
+       3,164898000 seconds sys
+
+
+# started on Tue May 13 20:46:14 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.660,44 msec task-clock                       #    1,873 CPUs utilized             
+               482      context-switches                 #   45,214 /sec                      
+                27      cpu-migrations                   #    2,533 /sec                      
+         3.186.847      page-faults                      #  298,941 K/sec                     
+       416.986.869      cpu_atom/cycles/                 #    0,039 GHz                         (8,38%)
+    48.621.858.201      cpu_core/cycles/                 #    4,561 GHz                         (99,87%)
+       483.918.135      cpu_atom/instructions/           #    1,16  insn per cycle              (9,96%)
+    85.128.617.227      cpu_core/instructions/           #  204,15  insn per cycle              (99,87%)
+       103.141.668      cpu_atom/branches/               #    9,675 M/sec                       (10,06%)
+    16.521.491.404      cpu_core/branches/               #    1,550 G/sec                       (99,87%)
+         1.135.485      cpu_atom/branch-misses/          #    1,10% of all branches             (8,71%)
+       143.377.246      cpu_core/branch-misses/          #  139,01% of all branches             (99,87%)
+             TopdownL1 (cpu_core)                 #     53,1 %  tma_backend_bound      
+                                                  #      5,7 %  tma_bad_speculation    
+                                                  #     11,8 %  tma_frontend_bound     
+                                                  #     29,3 %  tma_retiring             (99,87%)
+             TopdownL1 (cpu_atom)                 #      7,3 %  tma_bad_speculation    
+                                                  #     24,9 %  tma_retiring             (9,96%)
+                                                  #     58,4 %  tma_backend_bound      
+                                                  #     58,4 %  tma_backend_bound_aux  
+                                                  #      9,4 %  tma_frontend_bound       (10,71%)
+
+       5,692483618 seconds time elapsed
+
+       7,581744000 seconds user
+       3,081425000 seconds sys
+
+
+# started on Tue May 13 20:48:42 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.701,04 msec task-clock                       #    1,879 CPUs utilized             
+               412      context-switches                 #   38,501 /sec                      
+                32      cpu-migrations                   #    2,990 /sec                      
+         3.186.850      page-faults                      #  297,808 K/sec                     
+    18.031.404.292      cpu_atom/cycles/                 #    1,685 GHz                         (0,01%)
+    48.962.251.899      cpu_core/cycles/                 #    4,575 GHz                         (99,97%)
+    27.564.830.790      cpu_atom/instructions/           #    1,53  insn per cycle              (0,03%)
+    85.159.309.647      cpu_core/instructions/           #    4,72  insn per cycle              (99,97%)
+     2.924.646.269      cpu_atom/branches/               #  273,305 M/sec                       (0,07%)
+    16.519.097.205      cpu_core/branches/               #    1,544 G/sec                       (99,97%)
+        28.226.955      cpu_atom/branch-misses/          #    0,97% of all branches             (0,07%)
+       143.830.218      cpu_core/branch-misses/          #    4,92% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     52,2 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,5 %  tma_frontend_bound     
+                                                  #     30,0 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #     -1,8 %  tma_bad_speculation    
+                                                  #     17,7 %  tma_retiring             (0,07%)
+                                                  #     63,7 %  tma_backend_bound      
+                                                  #     63,7 %  tma_backend_bound_aux  
+                                                  #     20,4 %  tma_frontend_bound       (0,07%)
+
+       5,696205246 seconds time elapsed
+
+       7,542197000 seconds user
+       3,162502000 seconds sys
+
+
+# started on Tue May 13 20:51:12 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.719,24 msec task-clock                       #    1,864 CPUs utilized             
+               490      context-switches                 #   45,712 /sec                      
+                26      cpu-migrations                   #    2,426 /sec                      
+         3.186.848      page-faults                      #  297,302 K/sec                     
+    18.269.806.773      cpu_atom/cycles/                 #    1,704 GHz                         (0,09%)
+    48.732.394.523      cpu_core/cycles/                 #    4,546 GHz                         (99,95%)
+    17.351.137.465      cpu_atom/instructions/           #    0,95  insn per cycle              (0,11%)
+    84.965.389.061      cpu_core/instructions/           #    4,65  insn per cycle              (99,95%)
+     4.594.309.441      cpu_atom/branches/               #  428,604 M/sec                       (0,10%)
+    16.479.937.115      cpu_core/branches/               #    1,537 G/sec                       (99,95%)
+        38.045.102      cpu_atom/branch-misses/          #    0,83% of all branches             (0,11%)
+       143.046.565      cpu_core/branch-misses/          #    3,11% of all branches             (99,95%)
+             TopdownL1 (cpu_core)                 #     53,2 %  tma_backend_bound      
+                                                  #      4,1 %  tma_bad_speculation    
+                                                  #     13,6 %  tma_frontend_bound     
+                                                  #     29,2 %  tma_retiring             (99,95%)
+             TopdownL1 (cpu_atom)                 #      3,2 %  tma_bad_speculation    
+                                                  #     21,8 %  tma_retiring             (0,11%)
+                                                  #     61,7 %  tma_backend_bound      
+                                                  #     61,7 %  tma_backend_bound_aux  
+                                                  #     13,3 %  tma_frontend_bound       (0,11%)
+
+       5,751669412 seconds time elapsed
+
+       7,610636000 seconds user
+       3,109722000 seconds sys
+
+
+# started on Tue May 13 20:53:40 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.728,88 msec task-clock                       #    1,878 CPUs utilized             
+               422      context-switches                 #   39,333 /sec                      
+                43      cpu-migrations                   #    4,008 /sec                      
+         3.186.838      page-faults                      #  297,034 K/sec                     
+    33.223.547.986      cpu_atom/cycles/                 #    3,097 GHz                         (0,21%)
+    49.024.967.663      cpu_core/cycles/                 #    4,569 GHz                         (99,73%)
+    50.278.476.082      cpu_atom/instructions/           #    1,51  insn per cycle              (0,24%)
+    85.122.096.754      cpu_core/instructions/           #    2,56  insn per cycle              (99,73%)
+     8.684.706.383      cpu_atom/branches/               #  809,470 M/sec                       (0,26%)
+    16.507.627.596      cpu_core/branches/               #    1,539 G/sec                       (99,73%)
+        83.852.391      cpu_atom/branch-misses/          #    0,97% of all branches             (0,26%)
+       144.597.073      cpu_core/branch-misses/          #    1,66% of all branches             (99,73%)
+             TopdownL1 (cpu_core)                 #     52,6 %  tma_backend_bound      
+                                                  #      5,8 %  tma_bad_speculation    
+                                                  #     12,0 %  tma_frontend_bound     
+                                                  #     29,6 %  tma_retiring             (99,73%)
+             TopdownL1 (cpu_atom)                 #      7,5 %  tma_bad_speculation    
+                                                  #     29,7 %  tma_retiring             (0,26%)
+                                                  #     55,2 %  tma_backend_bound      
+                                                  #     55,2 %  tma_backend_bound_aux  
+                                                  #      7,6 %  tma_frontend_bound       (0,26%)
+
+       5,713149775 seconds time elapsed
+
+       7,666416000 seconds user
+       3,065366000 seconds sys
+
+
+# started on Tue May 13 20:56:08 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.702,35 msec task-clock                       #    1,871 CPUs utilized             
+               484      context-switches                 #   45,224 /sec                      
+                25      cpu-migrations                   #    2,336 /sec                      
+         3.186.854      page-faults                      #  297,771 K/sec                     
+    16.550.084.830      cpu_atom/cycles/                 #    1,546 GHz                         (0,02%)
+    48.761.562.079      cpu_core/cycles/                 #    4,556 GHz                         (99,99%)
+     1.770.296.258      cpu_atom/instructions/           #    0,11  insn per cycle              (0,04%)
+    84.945.491.229      cpu_core/instructions/           #    5,13  insn per cycle              (99,99%)
+       330.996.109      cpu_atom/branches/               #   30,927 M/sec                       (0,04%)
+    16.473.720.757      cpu_core/branches/               #    1,539 G/sec                       (99,99%)
+        15.436.453      cpu_atom/branch-misses/          #    4,66% of all branches             (0,04%)
+       144.778.002      cpu_core/branch-misses/          #   43,74% of all branches             (99,99%)
+             TopdownL1 (cpu_core)                 #     53,2 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,3 %  tma_frontend_bound     
+                                                  #     29,3 %  tma_retiring             (99,99%)
+             TopdownL1 (cpu_atom)                 #     -5,3 %  tma_bad_speculation    
+                                                  #      2,6 %  tma_retiring             (0,04%)
+                                                  #     96,2 %  tma_backend_bound      
+                                                  #     96,2 %  tma_backend_bound_aux  
+                                                  #      6,5 %  tma_frontend_bound       (0,04%)
+
+       5,719722175 seconds time elapsed
+
+       7,595678000 seconds user
+       3,109318000 seconds sys
+
+
+# started on Tue May 13 20:58:37 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.732,95 msec task-clock                       #    1,863 CPUs utilized             
+               511      context-switches                 #   47,610 /sec                      
+                25      cpu-migrations                   #    2,329 /sec                      
+         3.186.843      page-faults                      #  296,921 K/sec                     
+    18.327.287.131      cpu_atom/cycles/                 #    1,708 GHz                         (0,09%)
+    48.730.661.992      cpu_core/cycles/                 #    4,540 GHz                         (99,95%)
+    17.311.640.498      cpu_atom/instructions/           #    0,94  insn per cycle              (0,10%)
+    84.974.914.279      cpu_core/instructions/           #    4,64  insn per cycle              (99,95%)
+     5.308.144.600      cpu_atom/branches/               #  494,565 M/sec                       (0,08%)
+    16.481.201.238      cpu_core/branches/               #    1,536 G/sec                       (99,95%)
+        38.190.278      cpu_atom/branch-misses/          #    0,72% of all branches             (0,11%)
+       143.643.286      cpu_core/branch-misses/          #    2,71% of all branches             (99,95%)
+             TopdownL1 (cpu_core)                 #     53,5 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,3 %  tma_frontend_bound     
+                                                  #     29,0 %  tma_retiring             (99,95%)
+             TopdownL1 (cpu_atom)                 #      5,2 %  tma_bad_speculation    
+                                                  #     21,4 %  tma_retiring             (0,10%)
+                                                  #     59,4 %  tma_backend_bound      
+                                                  #     59,4 %  tma_backend_bound_aux  
+                                                  #     14,1 %  tma_frontend_bound       (0,10%)
+
+       5,761957267 seconds time elapsed
+
+       7,632101000 seconds user
+       3,104346000 seconds sys
+
+
+# started on Tue May 13 21:01:06 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.707,63 msec task-clock                       #    1,874 CPUs utilized             
+               445      context-switches                 #   41,559 /sec                      
+                20      cpu-migrations                   #    1,868 /sec                      
+         3.186.843      page-faults                      #  297,624 K/sec                     
+    18.240.411.023      cpu_atom/cycles/                 #    1,703 GHz                         (0,10%)
+    48.780.354.704      cpu_core/cycles/                 #    4,556 GHz                         (99,95%)
+    16.352.170.167      cpu_atom/instructions/           #    0,90  insn per cycle              (0,11%)
+    85.173.254.210      cpu_core/instructions/           #    4,67  insn per cycle              (99,95%)
+     3.259.858.357      cpu_atom/branches/               #  304,443 M/sec                       (0,11%)
+    16.533.382.733      cpu_core/branches/               #    1,544 G/sec                       (99,95%)
+        48.368.368      cpu_atom/branch-misses/          #    1,48% of all branches             (0,11%)
+       143.650.139      cpu_core/branch-misses/          #    4,41% of all branches             (99,95%)
+             TopdownL1 (cpu_core)                 #     52,1 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     14,0 %  tma_frontend_bound     
+                                                  #     29,6 %  tma_retiring             (99,95%)
+             TopdownL1 (cpu_atom)                 #     16,0 %  tma_bad_speculation    
+                                                  #     19,0 %  tma_retiring             (0,12%)
+                                                  #     61,7 %  tma_backend_bound      
+                                                  #     61,7 %  tma_backend_bound_aux  
+                                                  #      3,3 %  tma_frontend_bound       (0,13%)
+
+       5,714727973 seconds time elapsed
+
+       7,576881000 seconds user
+       3,133124000 seconds sys
+
+
+# started on Tue May 13 21:03:35 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.708,55 msec task-clock                       #    1,878 CPUs utilized             
+               438      context-switches                 #   40,902 /sec                      
+                21      cpu-migrations                   #    1,961 /sec                      
+         3.186.851      page-faults                      #  297,599 K/sec                     
+    18.581.955.286      cpu_atom/cycles/                 #    1,735 GHz                         (0,03%)
+    48.954.752.258      cpu_core/cycles/                 #    4,572 GHz                         (99,97%)
+    18.505.079.189      cpu_atom/instructions/           #    1,00  insn per cycle              (0,05%)
+    85.163.891.299      cpu_core/instructions/           #    4,58  insn per cycle              (99,97%)
+     3.602.987.255      cpu_atom/branches/               #  336,459 M/sec                       (0,06%)
+    16.525.083.700      cpu_core/branches/               #    1,543 G/sec                       (99,97%)
+        23.457.159      cpu_atom/branch-misses/          #    0,65% of all branches             (0,08%)
+       143.658.934      cpu_core/branch-misses/          #    3,99% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     50,9 %  tma_backend_bound      
+                                                  #      4,6 %  tma_bad_speculation    
+                                                  #     14,2 %  tma_frontend_bound     
+                                                  #     30,4 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #     -2,3 %  tma_bad_speculation    
+                                                  #     16,8 %  tma_retiring             (0,08%)
+                                                  #     67,6 %  tma_backend_bound      
+                                                  #     67,6 %  tma_backend_bound_aux  
+                                                  #     17,9 %  tma_frontend_bound       (0,08%)
+
+       5,703346280 seconds time elapsed
+
+       7,608888000 seconds user
+       3,102809000 seconds sys
+
+
+# started on Tue May 13 21:06:03 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.657,66 msec task-clock                       #    1,875 CPUs utilized             
+               470      context-switches                 #   44,100 /sec                      
+                22      cpu-migrations                   #    2,064 /sec                      
+         3.186.849      page-faults                      #  299,020 K/sec                     
+    18.287.495.009      cpu_atom/cycles/                 #    1,716 GHz                         (0,13%)
+    48.805.823.079      cpu_core/cycles/                 #    4,579 GHz                         (99,93%)
+    18.778.747.695      cpu_atom/instructions/           #    1,03  insn per cycle              (0,15%)
+    85.050.868.044      cpu_core/instructions/           #    4,65  insn per cycle              (99,93%)
+     3.889.396.151      cpu_atom/branches/               #  364,939 M/sec                       (0,15%)
+    16.494.237.447      cpu_core/branches/               #    1,548 G/sec                       (99,93%)
+        45.296.472      cpu_atom/branch-misses/          #    1,16% of all branches             (0,12%)
+       143.684.871      cpu_core/branch-misses/          #    3,69% of all branches             (99,93%)
+             TopdownL1 (cpu_core)                 #     52,3 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,8 %  tma_frontend_bound     
+                                                  #     29,7 %  tma_retiring             (99,93%)
+             TopdownL1 (cpu_atom)                 #      3,3 %  tma_bad_speculation    
+                                                  #     24,7 %  tma_retiring             (0,14%)
+                                                  #     55,5 %  tma_backend_bound      
+                                                  #     55,5 %  tma_backend_bound_aux  
+                                                  #     16,5 %  tma_frontend_bound       (0,15%)
+
+       5,683230890 seconds time elapsed
+
+       7,589162000 seconds user
+       3,071042000 seconds sys
+
+
+# started on Tue May 13 21:08:31 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.670,91 msec task-clock                       #    1,875 CPUs utilized             
+               467      context-switches                 #   43,764 /sec                      
+                35      cpu-migrations                   #    3,280 /sec                      
+         3.186.847      page-faults                      #  298,648 K/sec                     
+    18.797.485.914      cpu_atom/cycles/                 #    1,762 GHz                         (0,05%)
+    48.823.355.575      cpu_core/cycles/                 #    4,575 GHz                         (99,96%)
+    16.077.023.428      cpu_atom/instructions/           #    0,86  insn per cycle              (0,09%)
+    85.014.348.202      cpu_core/instructions/           #    4,52  insn per cycle              (99,96%)
+     2.971.159.104      cpu_atom/branches/               #  278,435 M/sec                       (0,08%)
+    16.488.543.213      cpu_core/branches/               #    1,545 G/sec                       (99,96%)
+        40.266.161      cpu_atom/branch-misses/          #    1,36% of all branches             (0,09%)
+       143.836.356      cpu_core/branch-misses/          #    4,84% of all branches             (99,96%)
+             TopdownL1 (cpu_core)                 #     52,8 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,6 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (99,96%)
+             TopdownL1 (cpu_atom)                 #      0,3 %  tma_bad_speculation    
+                                                  #     18,4 %  tma_retiring             (0,10%)
+                                                  #     72,0 %  tma_backend_bound      
+                                                  #     72,0 %  tma_backend_bound_aux  
+                                                  #      9,3 %  tma_frontend_bound       (0,10%)
+
+       5,692025314 seconds time elapsed
+
+       7,613311000 seconds user
+       3,059900000 seconds sys
+
+
+# started on Tue May 13 21:10:59 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.710,92 msec task-clock                       #    1,872 CPUs utilized             
+               475      context-switches                 #   44,347 /sec                      
+                21      cpu-migrations                   #    1,961 /sec                      
+         3.186.843      page-faults                      #  297,532 K/sec                     
+    18.214.653.116      cpu_atom/cycles/                 #    1,701 GHz                         (0,05%)
+    48.850.987.548      cpu_core/cycles/                 #    4,561 GHz                         (99,97%)
+    10.131.761.733      cpu_atom/instructions/           #    0,56  insn per cycle              (0,07%)
+    85.098.180.852      cpu_core/instructions/           #    4,67  insn per cycle              (99,97%)
+     2.017.522.302      cpu_atom/branches/               #  188,361 M/sec                       (0,07%)
+    16.521.921.119      cpu_core/branches/               #    1,543 G/sec                       (99,97%)
+        39.761.866      cpu_atom/branch-misses/          #    1,97% of all branches             (0,09%)
+       143.616.565      cpu_core/branch-misses/          #    7,12% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     53,2 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,5 %  tma_frontend_bound     
+                                                  #     29,0 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #     16,8 %  tma_bad_speculation    
+                                                  #     15,0 %  tma_retiring             (0,09%)
+                                                  #     64,6 %  tma_backend_bound      
+                                                  #     64,6 %  tma_backend_bound_aux  
+                                                  #      3,7 %  tma_frontend_bound       (0,09%)
+
+       5,720733261 seconds time elapsed
+
+       7,650760000 seconds user
+       3,063099000 seconds sys
+
+
+# started on Tue May 13 21:13:28 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.694,98 msec task-clock                       #    1,875 CPUs utilized             
+               431      context-switches                 #   40,299 /sec                      
+                23      cpu-migrations                   #    2,151 /sec                      
+         3.186.854      page-faults                      #  297,977 K/sec                     
+    18.547.752.872      cpu_atom/cycles/                 #    1,734 GHz                         (0,16%)
+    48.940.262.760      cpu_core/cycles/                 #    4,576 GHz                         (99,90%)
+    18.881.895.821      cpu_atom/instructions/           #    1,02  insn per cycle              (0,18%)
+    85.147.443.942      cpu_core/instructions/           #    4,59  insn per cycle              (99,90%)
+     3.712.930.492      cpu_atom/branches/               #  347,166 M/sec                       (0,18%)
+    16.516.804.983      cpu_core/branches/               #    1,544 G/sec                       (99,90%)
+        48.142.922      cpu_atom/branch-misses/          #    1,30% of all branches             (0,18%)
+       143.946.396      cpu_core/branch-misses/          #    3,88% of all branches             (99,90%)
+             TopdownL1 (cpu_core)                 #     52,2 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,7 %  tma_frontend_bound     
+                                                  #     29,8 %  tma_retiring             (99,90%)
+             TopdownL1 (cpu_atom)                 #     14,4 %  tma_bad_speculation    
+                                                  #     21,9 %  tma_retiring             (0,18%)
+                                                  #     59,9 %  tma_backend_bound      
+                                                  #     59,9 %  tma_backend_bound_aux  
+                                                  #      3,7 %  tma_frontend_bound       (0,18%)
+
+       5,702811285 seconds time elapsed
+
+       7,573741000 seconds user
+       3,124130000 seconds sys
+
+
+# started on Tue May 13 21:15:56 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.779,89 msec task-clock                       #    1,862 CPUs utilized             
+               512      context-switches                 #   47,496 /sec                      
+                28      cpu-migrations                   #    2,597 /sec                      
+         3.186.842      page-faults                      #  295,629 K/sec                     
+    18.192.188.929      cpu_atom/cycles/                 #    1,688 GHz                         (0,07%)
+    48.884.181.646      cpu_core/cycles/                 #    4,535 GHz                         (99,96%)
+    16.382.321.639      cpu_atom/instructions/           #    0,90  insn per cycle              (0,09%)
+    85.021.491.514      cpu_core/instructions/           #    4,67  insn per cycle              (99,96%)
+     3.013.376.572      cpu_atom/branches/               #  279,537 M/sec                       (0,09%)
+    16.494.032.410      cpu_core/branches/               #    1,530 G/sec                       (99,96%)
+        35.188.283      cpu_atom/branch-misses/          #    1,17% of all branches             (0,09%)
+       143.227.448      cpu_core/branch-misses/          #    4,75% of all branches             (99,96%)
+             TopdownL1 (cpu_core)                 #     53,1 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,6 %  tma_frontend_bound     
+                                                  #     29,1 %  tma_retiring             (99,96%)
+             TopdownL1 (cpu_atom)                 #     16,9 %  tma_bad_speculation    
+                                                  #     19,3 %  tma_retiring             (0,09%)
+                                                  #     57,0 %  tma_backend_bound      
+                                                  #     57,0 %  tma_backend_bound_aux  
+                                                  #      6,8 %  tma_frontend_bound       (0,09%)
+
+       5,787936529 seconds time elapsed
+
+       7,604955000 seconds user
+       3,177802000 seconds sys
+
+
+# started on Tue May 13 21:18:26 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.707,46 msec task-clock                       #    1,868 CPUs utilized             
+               484      context-switches                 #   45,202 /sec                      
+                37      cpu-migrations                   #    3,456 /sec                      
+         3.186.844      page-faults                      #  297,628 K/sec                     
+    21.941.261.125      cpu_atom/cycles/                 #    2,049 GHz                         (0,11%)
+    48.732.065.780      cpu_core/cycles/                 #    4,551 GHz                         (99,89%)
+    23.366.042.018      cpu_atom/instructions/           #    1,06  insn per cycle              (0,16%)
+    85.013.502.978      cpu_core/instructions/           #    3,87  insn per cycle              (99,89%)
+     4.702.971.927      cpu_atom/branches/               #  439,224 M/sec                       (0,17%)
+    16.488.717.086      cpu_core/branches/               #    1,540 G/sec                       (99,89%)
+        61.961.867      cpu_atom/branch-misses/          #    1,32% of all branches             (0,17%)
+       144.632.223      cpu_core/branch-misses/          #    3,08% of all branches             (99,89%)
+             TopdownL1 (cpu_core)                 #     52,7 %  tma_backend_bound      
+                                                  #      4,4 %  tma_bad_speculation    
+                                                  #     13,5 %  tma_frontend_bound     
+                                                  #     29,4 %  tma_retiring             (99,89%)
+             TopdownL1 (cpu_atom)                 #      9,8 %  tma_bad_speculation    
+                                                  #     23,3 %  tma_retiring             (0,17%)
+                                                  #     63,0 %  tma_backend_bound      
+                                                  #     63,0 %  tma_backend_bound_aux  
+                                                  #      3,9 %  tma_frontend_bound       (0,17%)
+
+       5,732183794 seconds time elapsed
+
+       7,677884000 seconds user
+       3,032005000 seconds sys
+
+
+# started on Tue May 13 21:20:55 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.723,43 msec task-clock                       #    1,873 CPUs utilized             
+               437      context-switches                 #   40,752 /sec                      
+                27      cpu-migrations                   #    2,518 /sec                      
+         3.186.852      page-faults                      #  297,186 K/sec                     
+    18.632.200.670      cpu_atom/cycles/                 #    1,738 GHz                         (0,13%)
+    48.909.421.190      cpu_core/cycles/                 #    4,561 GHz                         (99,93%)
+    16.528.612.707      cpu_atom/instructions/           #    0,89  insn per cycle              (0,14%)
+    85.051.997.288      cpu_core/instructions/           #    4,56  insn per cycle              (99,93%)
+     3.278.814.614      cpu_atom/branches/               #  305,762 M/sec                       (0,14%)
+    16.493.333.358      cpu_core/branches/               #    1,538 G/sec                       (99,93%)
+        46.913.071      cpu_atom/branch-misses/          #    1,43% of all branches             (0,14%)
+       144.014.485      cpu_core/branch-misses/          #    4,39% of all branches             (99,93%)
+             TopdownL1 (cpu_core)                 #     52,7 %  tma_backend_bound      
+                                                  #      4,2 %  tma_bad_speculation    
+                                                  #     13,5 %  tma_frontend_bound     
+                                                  #     29,5 %  tma_retiring             (99,93%)
+             TopdownL1 (cpu_atom)                 #     17,3 %  tma_bad_speculation    
+                                                  #     18,9 %  tma_retiring             (0,14%)
+                                                  #     60,0 %  tma_backend_bound      
+                                                  #     60,0 %  tma_backend_bound_aux  
+                                                  #      3,8 %  tma_frontend_bound       (0,14%)
+
+       5,724516456 seconds time elapsed
+
+       7,629552000 seconds user
+       3,097006000 seconds sys
+
+
+# started on Tue May 13 21:23:25 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.698,57 msec task-clock                       #    1,869 CPUs utilized             
+               486      context-switches                 #   45,427 /sec                      
+                23      cpu-migrations                   #    2,150 /sec                      
+         3.186.847      page-faults                      #  297,876 K/sec                     
+    17.600.255.948      cpu_atom/cycles/                 #    1,645 GHz                         (0,05%)
+    48.733.228.633      cpu_core/cycles/                 #    4,555 GHz                         (99,97%)
+    10.887.302.817      cpu_atom/instructions/           #    0,62  insn per cycle              (0,07%)
+    84.947.079.967      cpu_core/instructions/           #    4,83  insn per cycle              (99,97%)
+     2.752.422.293      cpu_atom/branches/               #  257,270 M/sec                       (0,08%)
+    16.476.358.274      cpu_core/branches/               #    1,540 G/sec                       (99,97%)
+        46.143.359      cpu_atom/branch-misses/          #    1,68% of all branches             (0,09%)
+       143.669.249      cpu_core/branch-misses/          #    5,22% of all branches             (99,97%)
+             TopdownL1 (cpu_core)                 #     53,2 %  tma_backend_bound      
+                                                  #      4,1 %  tma_bad_speculation    
+                                                  #     13,6 %  tma_frontend_bound     
+                                                  #     29,2 %  tma_retiring             (99,97%)
+             TopdownL1 (cpu_atom)                 #     19,7 %  tma_bad_speculation    
+                                                  #     15,8 %  tma_retiring             (0,09%)
+                                                  #     60,3 %  tma_backend_bound      
+                                                  #     60,3 %  tma_backend_bound_aux  
+                                                  #      4,2 %  tma_frontend_bound       (0,09%)
+
+       5,723065662 seconds time elapsed
+
+       7,575882000 seconds user
+       3,125238000 seconds sys
+
+
+# started on Tue May 13 21:25:54 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.752,11 msec task-clock                       #    1,861 CPUs utilized             
+               468      context-switches                 #   43,526 /sec                      
+                22      cpu-migrations                   #    2,046 /sec                      
+         3.186.850      page-faults                      #  296,393 K/sec                     
+    16.702.154.269      cpu_atom/cycles/                 #    1,553 GHz                         (0,03%)
+    48.795.927.633      cpu_core/cycles/                 #    4,538 GHz                         (99,98%)
+    10.524.441.755      cpu_atom/instructions/           #    0,63  insn per cycle              (0,06%)
+    85.008.742.850      cpu_core/instructions/           #    5,09  insn per cycle              (99,98%)
+     1.751.725.656      cpu_atom/branches/               #  162,919 M/sec                       (0,06%)
+    16.487.698.271      cpu_core/branches/               #    1,533 G/sec                       (99,98%)
+        18.215.760      cpu_atom/branch-misses/          #    1,04% of all branches             (0,06%)
+       143.598.305      cpu_core/branch-misses/          #    8,20% of all branches             (99,98%)
+             TopdownL1 (cpu_core)                 #     54,0 %  tma_backend_bound      
+                                                  #      5,2 %  tma_bad_speculation    
+                                                  #     11,7 %  tma_frontend_bound     
+                                                  #     29,1 %  tma_retiring             (99,98%)
+             TopdownL1 (cpu_atom)                 #    -16,7 %  tma_bad_speculation    
+                                                  #     13,9 %  tma_retiring             (0,06%)
+                                                  #     93,3 %  tma_backend_bound      
+                                                  #     93,3 %  tma_backend_bound_aux  
+                                                  #      9,5 %  tma_frontend_bound       (0,06%)
+
+       5,777272875 seconds time elapsed
+
+       7,645446000 seconds user
+       3,109927000 seconds sys
+
+
+# started on Tue May 13 21:28:24 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.722,26 msec task-clock                       #    1,869 CPUs utilized             
+               494      context-switches                 #   46,072 /sec                      
+                36      cpu-migrations                   #    3,358 /sec                      
+         3.186.852      page-faults                      #  297,218 K/sec                     
+    30.413.794.558      cpu_atom/cycles/                 #    2,837 GHz                         (0,11%)
+    48.933.461.185      cpu_core/cycles/                 #    4,564 GHz                         (99,88%)
+    55.840.468.872      cpu_atom/instructions/           #    1,84  insn per cycle              (0,13%)
+    84.965.506.785      cpu_core/instructions/           #    2,79  insn per cycle              (99,88%)
+    11.557.322.547      cpu_atom/branches/               #    1,078 G/sec                       (0,10%)
+    16.482.258.699      cpu_core/branches/               #    1,537 G/sec                       (99,88%)
+        39.486.157      cpu_atom/branch-misses/          #    0,34% of all branches             (0,14%)
+       144.281.921      cpu_core/branch-misses/          #    1,25% of all branches             (99,88%)
+             TopdownL1 (cpu_core)                 #     52,0 %  tma_backend_bound      
+                                                  #      4,4 %  tma_bad_speculation    
+                                                  #     14,1 %  tma_frontend_bound     
+                                                  #     29,5 %  tma_retiring             (99,88%)
+             TopdownL1 (cpu_atom)                 #      4,5 %  tma_bad_speculation    
+                                                  #     39,4 %  tma_retiring             (0,15%)
+                                                  #     40,5 %  tma_backend_bound      
+                                                  #     40,5 %  tma_backend_bound_aux  
+                                                  #     15,6 %  tma_frontend_bound       (0,15%)
+
+       5,735680876 seconds time elapsed
+
+       7,624329000 seconds user
+       3,101472000 seconds sys
+
+
+# started on Tue May 13 21:30:53 2025
+
+
+ Performance counter stats for './parallel 2 1024':
+
+         10.706,39 msec task-clock                       #    1,877 CPUs utilized             
+               412      context-switches                 #   38,482 /sec                      
+                23      cpu-migrations                   #    2,148 /sec                      
+         3.186.844      page-faults                      #  297,658 K/sec                     
+    18.358.138.174      cpu_atom/cycles/                 #    1,715 GHz                         (0,14%)
+    48.925.706.998      cpu_core/cycles/                 #    4,570 GHz                         (99,90%)
+    19.641.394.622      cpu_atom/instructions/           #    1,07  insn per cycle              (0,18%)
+    85.193.036.361      cpu_core/instructions/           #    4,64  insn per cycle              (99,90%)
+     4.909.334.607      cpu_atom/branches/               #  458,543 M/sec                       (0,17%)
+    16.530.721.958      cpu_core/branches/               #    1,544 G/sec                       (99,90%)
+        44.335.095      cpu_atom/branch-misses/          #    0,90% of all branches             (0,19%)
+       143.463.833      cpu_core/branch-misses/          #    2,92% of all branches             (99,90%)
+             TopdownL1 (cpu_core)                 #     52,0 %  tma_backend_bound      
+                                                  #      4,4 %  tma_bad_speculation    
+                                                  #     13,9 %  tma_frontend_bound     
+                                                  #     29,6 %  tma_retiring             (99,90%)
+             TopdownL1 (cpu_atom)                 #      3,6 %  tma_bad_speculation    
+                                                  #     23,9 %  tma_retiring             (0,19%)
+                                                  #     59,4 %  tma_backend_bound      
+                                                  #     59,4 %  tma_backend_bound_aux  
+                                                  #     13,0 %  tma_frontend_bound       (0,19%)
+
+       5,703370059 seconds time elapsed
+
+       7,616753000 seconds user
+       3,093057000 seconds sys
+
+
