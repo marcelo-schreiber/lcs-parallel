@@ -154,8 +154,9 @@ int main(void) {
 	initScoreMatrix(scoreMatrix, sizeA, sizeB);
 
 	//fill up the rest of the matrix and return final score (element locate at the last line and collumn)
-	LCS(scoreMatrix, sizeA, sizeB, seqA, seqB);
+	int res = LCS(scoreMatrix, sizeA, sizeB, seqA, seqB);
 
+	printf("LCS length: %d\n", res);
 	/* if you wish to see the entire score matrix,
 	 for debug purposes, define DEBUGMATRIX. */
 #ifdef DEBUGMATRIX

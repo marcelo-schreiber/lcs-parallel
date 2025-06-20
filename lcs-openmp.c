@@ -211,7 +211,9 @@ int main(int argc, char **argv)
 	}
 
 	// fill up the rest of the matrix and return final score (element locate at the last line and collumn)
-	LCS(scoreMatrix, sizeA, sizeB, seqA, seqB, threadCount, blockSize);
+	int res = LCS(scoreMatrix, sizeA, sizeB, seqA, seqB, threadCount, blockSize);
+
+	printf("LCS length: %d\n", res);
 
 	/* if you wish to see the entire score matrix,
 	 for debug purposes, define DEBUGMATRIX. */

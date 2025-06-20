@@ -3,9 +3,9 @@ from os import system
 from time import sleep
 
 LENGTHS = [80000, 60000, 40000, 10000]
-NUM_THREADS = [1, 2, 4, 8, 16]
-BLOCKS = [32, 256, 1024, 4096]
-REPS = 20
+NUM_PROCESSES = [2, 4, 6]
+BLOCKS = [32, 256, 1024]
+REPS = 5
 
 def generate_inputs(length):
     with open('fileA.in', 'w') as f:
@@ -16,41 +16,6 @@ def generate_inputs(length):
         for _ in range(length):
             f.write(random.choice('abcdefghijklmnopqrstuvwxyz'))
         f.write('\n')
-
-def main():
-    system("make")
-
-    for length in LENGTHS:
-        for _ in range(REPS):
-            # sequential
-            generate_inputs(length)
-
-            sleep(.1)
-
-            system(f"perf stat -o ./txts/seq{length}.txt --append -- ./sequential")
-
-            sleep(.1)
-            
-            # parallel
-            for threads in NUM_THREADS:
-                for block in BLOCKS:
-                    system(f"perf stat -o ./txts/para{length}_{threads}_{block}.txt --append -- ./parallel {threads} {block}")
-                    sleep(.1)
-    
-    # get averages and deviations and put it in csv
-    with open("parallel.csv", "w") as f:
-        f.write("length,threads,blocks,user_avg,user_dev,real_avg,real_dev\n")
-        for length in LENGTHS:
-            for threads in NUM_THREADS:
-                for block in BLOCKS:
-                    user_avg, user_dev, real_avg, real_dev = get_averages_and_deviations_from_file(f"./txts/para{length}_{threads}_{block}.txt")
-                    f.write(f"{length},{threads},{block},{user_avg},{user_dev},{real_avg},{real_dev}\n")
-
-    with open("sequential.csv", "w") as f:
-        f.write("length,user_avg,user_dev,real_avg,real_dev,\n")
-        for length in LENGTHS:
-            user_avg, user_dev, real_avg, real_dev = get_averages_and_deviations_from_file(f"./txts/seq{length}.txt")
-            f.write(f"{length},{user_avg},{user_dev},{real_avg},{real_dev}\n")
 
 def get_averages_and_deviations_from_file(file):
     user_times = []
@@ -65,7 +30,6 @@ def get_averages_and_deviations_from_file(file):
             elif "elapsed" in line:
                 real_time = float(line.split()[0].replace(',', '.'))
                 real_times.append(real_time)
-    # Calculate average and standard deviation
 
     average_user_time = sum(user_times) / len(user_times)
     average_real_time = sum(real_times) / len(real_times)
@@ -74,9 +38,48 @@ def get_averages_and_deviations_from_file(file):
 
     return average_user_time, user_deviation, average_real_time, real_deviation
 
+def main():
+    system("make")
 
+    for length in LENGTHS:
+        for _ in range(REPS):
+            generate_inputs(length)
+            sleep(0.1)
+
+            # Sequential run (optional if not comparing)
+            system(f"perf stat -o ./txts/seq{length}.txt --append -- ./sequential")
+            sleep(0.1)
+
+            # MPI runs
+            for np in NUM_PROCESSES:
+                for block in BLOCKS:
+                    outfile = f"./txts/mpi{length}_{np}_{block}.txt"
+                    cmd = f"perf stat -o {outfile} --append -- mpirun -np {np} ./mpi {block}"
+                    system(cmd)
+                    sleep(0.1)
+
+    # Generate CSV reports
+    with open("mpi.csv", "w") as f:
+        f.write("length,np,block,user_avg,user_dev,real_avg,real_dev\n")
+        for length in LENGTHS:
+            for np in NUM_PROCESSES:
+                for block in BLOCKS:
+                    try:
+                        file = f"./txts/mpi{length}_{np}_{block}.txt"
+                        user_avg, user_dev, real_avg, real_dev = get_averages_and_deviations_from_file(file)
+                        f.write(f"{length},{np},{block},{user_avg},{user_dev},{real_avg},{real_dev}\n")
+                    except Exception:
+                        f.write(f"{length},{np},{block},ERROR,ERROR,ERROR,ERROR\n")
+
+    with open("sequential.csv", "w") as f:
+        f.write("length,user_avg,user_dev,real_avg,real_dev\n")
+        for length in LENGTHS:
+            try:
+                file = f"./txts/seq{length}.txt"
+                user_avg, user_dev, real_avg, real_dev = get_averages_and_deviations_from_file(file)
+                f.write(f"{length},{user_avg},{user_dev},{real_avg},{real_dev}\n")
+            except Exception:
+                f.write(f"{length},ERROR,ERROR,ERROR,ERROR\n")
 
 if __name__ == "__main__":
-    # generate_inputs(100000)
-    # get_averages_and_deviations_from_file("algo.txt")
     main()

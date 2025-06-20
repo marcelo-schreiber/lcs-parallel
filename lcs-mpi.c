@@ -70,8 +70,7 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
             if (bi >= blocks_i || bj >= blocks_j)
                 continue;
 
-            int global_block_id = bi * blocks_j + bj;
-            if (global_block_id % size != rank)
+            if ((bi + bj) % size != rank)
                 continue;
 
             int i_start = bi * blockSize + 1;
@@ -80,16 +79,16 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
             int j_end = min((bj + 1) * blockSize, sizeA);
 
             if (bi > 0) {
-                int src = ((bi - 1) * blocks_j + bj) % size;
+                int src = ((bi - 1) + bj) % size;
                 MPI_Recv(&scoreMatrix[i_start - 1][j_start], j_end - j_start + 1, MPI_UNSIGNED_SHORT, src, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             }
             if (bj > 0) {
-                int src = (bi * blocks_j + (bj - 1)) % size;
+                int src = (bi + (bj - 1)) % size;
                 for (int i = i_start; i <= i_end; ++i)
                     MPI_Recv(&scoreMatrix[i][j_start - 1], 1, MPI_UNSIGNED_SHORT, src, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             }
             if (bi > 0 && bj > 0) {
-                int src = ((bi - 1) * blocks_j + (bj - 1)) % size;
+                int src = ((bi - 1) + (bj - 1)) % size;
                 MPI_Recv(&scoreMatrix[i_start - 1][j_start - 1], 1, MPI_UNSIGNED_SHORT, src, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             }
 
@@ -103,16 +102,16 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
             }
 
             if (bi < blocks_i - 1) {
-                int dest = ((bi + 1) * blocks_j + bj) % size;
+                int dest = ((bi + 1) + bj) % size;
                 MPI_Send(&scoreMatrix[i_end][j_start], j_end - j_start + 1, MPI_UNSIGNED_SHORT, dest, 0, MPI_COMM_WORLD);
             }
             if (bj < blocks_j - 1) {
-                int dest = (bi * blocks_j + (bj + 1)) % size;
+                int dest = (bi + (bj + 1)) % size;
                 for (int i = i_start; i <= i_end; ++i)
                     MPI_Send(&scoreMatrix[i][j_end], 1, MPI_UNSIGNED_SHORT, dest, 1, MPI_COMM_WORLD);
             }
             if (bi < blocks_i - 1 && bj < blocks_j - 1) {
-                int dest = ((bi + 1) * blocks_j + (bj + 1)) % size;
+                int dest = ((bi + 1) + (bj + 1)) % size;
                 MPI_Send(&scoreMatrix[i_end][j_end], 1, MPI_UNSIGNED_SHORT, dest, 2, MPI_COMM_WORLD);
             }
         }
@@ -121,9 +120,8 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
     int result = 0;
     int last_block_i = (sizeB - 1) / blockSize;
     int last_block_j = (sizeA - 1) / blockSize;
-    int last_block_id = last_block_i * blocks_j + last_block_j;
 
-    if ((last_block_id % size) == rank) {
+    if (((last_block_i + last_block_j) % size) == rank) {
         result = scoreMatrix[sizeB][sizeA];
     }
 
