@@ -1,0 +1,60 @@
+LCS length: 26046
+Matrix size: 80001 x 80001
+Time elapsed: 2.601213 seconds
+LCS length: 25976
+Matrix size: 80001 x 80001
+Time elapsed: 2.542943 seconds
+LCS length: 26044
+Matrix size: 80001 x 80001
+Time elapsed: 2.614293 seconds
+LCS length: 26045
+Matrix size: 80001 x 80001
+Time elapsed: 2.552932 seconds
+LCS length: 26058
+Matrix size: 80001 x 80001
+Time elapsed: 2.592058 seconds
+LCS length: 26008
+Matrix size: 80001 x 80001
+Time elapsed: 2.558061 seconds
+LCS length: 26033
+Matrix size: 80001 x 80001
+Time elapsed: 2.605578 seconds
+LCS length: 26025
+Matrix size: 80001 x 80001
+Time elapsed: 2.674465 seconds
+LCS length: 26006
+Matrix size: 80001 x 80001
+Time elapsed: 2.542522 seconds
+LCS length: 26031
+Matrix size: 80001 x 80001
+Time elapsed: 2.610380 seconds
+LCS length: 26012
+Matrix size: 80001 x 80001
+Time elapsed: 2.584762 seconds
+LCS length: 26038
+Matrix size: 80001 x 80001
+Time elapsed: 2.524818 seconds
+LCS length: 26037
+Matrix size: 80001 x 80001
+Time elapsed: 2.556598 seconds
+LCS length: 26007
+Matrix size: 80001 x 80001
+Time elapsed: 2.578755 seconds
+LCS length: 26050
+Matrix size: 80001 x 80001
+Time elapsed: 2.606970 seconds
+LCS length: 26059
+Matrix size: 80001 x 80001
+Time elapsed: 2.658070 seconds
+LCS length: 26055
+Matrix size: 80001 x 80001
+Time elapsed: 2.596895 seconds
+LCS length: 26007
+Matrix size: 80001 x 80001
+Time elapsed: 2.592412 seconds
+LCS length: 26013
+Matrix size: 80001 x 80001
+Time elapsed: 2.627970 seconds
+LCS length: 25994
+Matrix size: 80001 x 80001
+Time elapsed: 2.654827 seconds
