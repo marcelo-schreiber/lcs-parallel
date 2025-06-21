@@ -63,6 +63,8 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
     int blocks_i = (sizeB + blockSize - 1) / blockSize;
     int blocks_j = (sizeA + blockSize - 1) / blockSize;
 
+    mtype *col_buffer = (mtype *)malloc(blockSize * sizeof(mtype));
+
     for (int k = 0; k <= blocks_i + blocks_j - 2; ++k) {
         MPI_Barrier(MPI_COMM_WORLD);
         for (int bi = 0; bi <= k; ++bi) {
@@ -84,8 +86,10 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
             }
             if (bj > 0) {
                 int src = (bi + (bj - 1)) % size;
-                for (int i = i_start; i <= i_end; ++i)
-                    MPI_Recv(&scoreMatrix[i][j_start - 1], 1, MPI_UNSIGNED_SHORT, src, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                int count = i_end - i_start + 1;
+                MPI_Recv(col_buffer, count, MPI_UNSIGNED_SHORT, src, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                for (int i = 0; i < count; ++i)
+                    scoreMatrix[i_start + i][j_start - 1] = col_buffer[i];
             }
             if (bi > 0 && bj > 0) {
                 int src = ((bi - 1) + (bj - 1)) % size;
@@ -107,8 +111,10 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
             }
             if (bj < blocks_j - 1) {
                 int dest = (bi + (bj + 1)) % size;
-                for (int i = i_start; i <= i_end; ++i)
-                    MPI_Send(&scoreMatrix[i][j_end], 1, MPI_UNSIGNED_SHORT, dest, 1, MPI_COMM_WORLD);
+                int count = i_end - i_start + 1;
+                for (int i = 0; i < count; ++i)
+                    col_buffer[i] = scoreMatrix[i_start + i][j_end];
+                MPI_Send(col_buffer, count, MPI_UNSIGNED_SHORT, dest, 1, MPI_COMM_WORLD);
             }
             if (bi < blocks_i - 1 && bj < blocks_j - 1) {
                 int dest = ((bi + 1) + (bj + 1)) % size;
@@ -116,6 +122,8 @@ int LCS(mtype **scoreMatrix, int sizeA, int sizeB, char *seqA, char *seqB, int b
             }
         }
     }
+
+    free(col_buffer);
 
     int result = 0;
     int last_block_i = (sizeB - 1) / blockSize;
