@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #ifndef max
 #define max( a, b ) ( ((a) > (b)) ? (a) : (b) )
@@ -154,9 +155,20 @@ int main(void) {
 	initScoreMatrix(scoreMatrix, sizeA, sizeB);
 
 	//fill up the rest of the matrix and return final score (element locate at the last line and collumn)
+
+	// start timer
+	clock_t start_time = clock();
+
 	int res = LCS(scoreMatrix, sizeA, sizeB, seqA, seqB);
 
+	// stop timer
+	clock_t end_time = clock();
+	double elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+
 	printf("LCS length: %d\n", res);
+	printf("Matrix size: %d x %d\n", sizeB + 1, sizeA + 1);
+	printf("Time elapsed: %.6f seconds\n", elapsed_time);
+
 	/* if you wish to see the entire score matrix,
 	 for debug purposes, define DEBUGMATRIX. */
 #ifdef DEBUGMATRIX

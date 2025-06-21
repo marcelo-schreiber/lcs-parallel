@@ -202,6 +202,7 @@ int main(int argc, char **argv)
     if (rank == 0)
     {
         printf("LCS length: %d\n", result);
+        printf("Matrix size: %d x %d\n", sizeB + 1, sizeA + 1);
         printf("Time elapsed: %.6f seconds\n", elapsed);
     }
 
