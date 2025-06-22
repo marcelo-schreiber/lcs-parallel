@@ -83,4 +83,5 @@ def main():
                 f.write(f"{length},ERROR,ERROR\n")
 
 if __name__ == "__main__":
-    main()
+    # main()
+    generate_inputs(10)
