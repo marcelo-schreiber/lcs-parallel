@@ -103,7 +103,7 @@ int LCS(int sizeA, int sizeB, char *seqA, char *seqB, int blockSize, int rank, i
             if (bi > 0)
             {
                 int src = ((bi - 1) + bj) % size;
-                MPI_Recv(row_buffer, block_width + 1, MPI_UNSIGNED_SHORT, src, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                if (src != rank) MPI_Recv(row_buffer, block_width + 1, MPI_UNSIGNED_SHORT, src, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
                 for (int j = 0; j <= block_width; j++)
                     localBlock[0][j] = row_buffer[j];
             }
@@ -112,7 +112,7 @@ int LCS(int sizeA, int sizeB, char *seqA, char *seqB, int blockSize, int rank, i
             if (bj > 0)
             {
                 int src = (bi + (bj - 1)) % size;
-                MPI_Recv(col_buffer, block_height + 1, MPI_UNSIGNED_SHORT, src, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                if (src != rank) MPI_Recv(col_buffer, block_height + 1, MPI_UNSIGNED_SHORT, src, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
                 for (int i = 0; i <= block_height; i++)
                     localBlock[i][0] = col_buffer[i];
             }
@@ -138,7 +138,8 @@ int LCS(int sizeA, int sizeB, char *seqA, char *seqB, int blockSize, int rank, i
                 int dest = ((bi + 1) + bj) % size;
                 for (int j = 0; j <= block_width; j++)
                     row_buffer[j] = localBlock[block_height][j];
-                MPI_Send(row_buffer, block_width + 1, MPI_UNSIGNED_SHORT, dest, 0, MPI_COMM_WORLD);
+                
+                if (dest != rank) MPI_Send(row_buffer, block_width + 1, MPI_UNSIGNED_SHORT, dest, 0, MPI_COMM_WORLD);
             }
             
             // Send right boundary (to right block)
@@ -147,7 +148,8 @@ int LCS(int sizeA, int sizeB, char *seqA, char *seqB, int blockSize, int rank, i
                 int dest = (bi + (bj + 1)) % size;
                 for (int i = 0; i <= block_height; i++)
                     col_buffer[i] = localBlock[i][block_width];
-                MPI_Send(col_buffer, block_height + 1, MPI_UNSIGNED_SHORT, dest, 1, MPI_COMM_WORLD);
+
+                if (dest != rank) MPI_Send(col_buffer, block_height + 1, MPI_UNSIGNED_SHORT, dest, 1, MPI_COMM_WORLD);
             }
 
             // Store result if this is the last block
@@ -164,7 +166,7 @@ int LCS(int sizeA, int sizeB, char *seqA, char *seqB, int blockSize, int rank, i
 
     int global_result;
     MPI_Reduce(&final_result, &global_result, 1, MPI_INT, MPI_MAX, 0, MPI_COMM_WORLD);
-
+    
     return global_result;
 }
 
@@ -201,9 +203,7 @@ int main(int argc, char **argv)
 
     if (rank == 0)
     {
-        printf("LCS length: %d\n", result);
-        printf("Matrix size: %d x %d\n", sizeB + 1, sizeA + 1);
-        printf("Time elapsed: %.6f seconds\n", elapsed);
+        printf("Score: %d\n", result);
     }
 
     free(seqA);
